@@ -1,46 +1,130 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### CRIAR PROJETO
 
-## Available Scripts
+### `npx create-react-app my-app --template=typescript`
 
-In the project directory, you can run:
+### INICIAR PROJETO
 
-### `npm start`
+### `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### INSTALAR BIBLIOTECAS DE ESTILIZAÇÃO E ROTEAMENTO
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### react router dom `npm install react-router-dom `
 
-### `npm test`
+### react router dom `npm i react-hook-form`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- para parametrizar as rotas do projeto para conseguir manipular e fazer com que o usuario transite entre uma pagina e outra.
 
-### `npm run build`
+https://v5.reactrouter.com/web/guides/quick-start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### INSTALAR BIBLIOTECAS DE ESTILIZAÇÃO
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### styled-components `npm install --save styled-components`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- https://styled-components.com/
 
-### `npm run eject`
+### styled-system `npm i styled-system styled-components`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+https://styled-system.com/getting-started/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- da algumas funçoes, algumas constantes que a gente consegue customizar e passar parametros
+  customizáveis em nossos componentes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### INSTALAR BIBLIOTECAS DE DESENVOLVIMENTO
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm install -D @types/styled-system @types/styled-components @types/react-dom`
 
-## Learn More
+- são tipagens das bibliotecas em TypeScript
+  -como a gente esta no ambiente em TypeScript é muito importante essas tipagens pq é muito comum
+  a comunidade o pessoal subir o pacote da biblioteca e outro pacote da tipagem para ficar mais leve porque
+  nem todo mundo trabalha com TypeScript
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### CRIANDO AS PASTAS
+
+-PUBLIC
+-index.html
+
+- SRC
+
+# -ASSETS
+
+    -icons
+    -img
+
+# -COMPONENTES
+
+    -Title
+      -index.tsx
+      -style.css
+
+# -CONTAINERS
+
+    -NFTCard
+      -index.tsc
+      -style.css
+
+# -PAGES
+
+    -Home
+      -index.tsc
+      -style.css
+
+# -TYPES
+
+---
+
+# -COMPONENTES
+
+uma parte do código que é utilizado e não tem lógica nenhuma
+é como se fosse os dedos da mãos
+
+# -CONTAINERS
+
+o containers renderiza os componentes
+é como se fosse as mãos pq ele junta todos os dedos(componentes)
+
+# -PAGES
+
+tem controle total da aplicação
+requisão para o Back End
+
+# -TYPES
+
+=============================>>> <<<=================================
+
+### Explicando o CÓDIGO ==> COMPONENTES <==
+
+aqui basicamente:
+
+### ==> IMPORTAÇÃO <==
+
+- XXX > importa o react.
+- XXX > importa o slyle dentro desta pasta Components.
+
+### ==> ARRAY INTERFACE TITLEPROPS <==
+
+- XXX > cria uma array(interface TitleProps) onde vai ser atribuida as propriedades(text:string).
+- XXX > cira uma constante chamada Title .
+- XXX > instancia dentro da const Title o <TitleProps>.
+- XXX > a const Title recebe depois da instancia <TitleProps> O react com (FC) Function componente.
+- XXX > e o React.FC vi recebe como propriedade o ({text}).
+
+### ==> RETURN DO TITLEPROPS <==
+
+- XXX > retorna o H1 (Titulo) com a classe className="title"
+- XXX > recebendo como propriedade {text}
+
+### ==> EXPORTAÇÃO DO TITLE <==
+
+- XXX > Depois exporta um componente React do Title que vai ser o <TitleProps>.
+  =============================>>> <<<=================================
+
+### ==> STYLE DO | XXX | | XXX | XXX |
+
+- XXX > Estilizar no (syle.css) o ==> .xxx <==
+- XXX > width / height / font-size
+
+=============================>>> <<<=================================

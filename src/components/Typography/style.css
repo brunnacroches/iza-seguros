@@ -1,0 +1,30 @@
+.h1__title {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 22px;
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+.h2__subtitle {
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.h3__textCard {
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+}
+.h4__subtitle {
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+.h5__subletitle__number {
+  font-family: "Karla", sans-serif;
+  font-size: 28px;
+}
