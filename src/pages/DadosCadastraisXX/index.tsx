@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import Button from "../../components/Button";
 import Ativo from "../../components/Chip/Ativo";
 import Link from "../../components/Link";
@@ -10,30 +9,11 @@ import TextInput from "../../components/TextInput";
 import SelectionInput from "../../components/SelectInput";
 import Typography from "../../components/Typography";
 
-export interface UserInfoProps {
-  button: string;
-  chip: string;
-  link: string;
-  menulink: string;
-  passwordinput: string;
-  searchinput: string;
-  textinput: string;
-  selectioninput: string;
-  typography: string;
-}
+import "./style.css";
 
-const UserInfo: React.FC<UserInfoProps> = ({
-  button,
-  chip,
-  link,
-  menulink,
-  passwordinput,
-  searchinput,
-  textinput,
-  selectioninput,
-}) => {
+const DadosCadastraisIza = () => {
   return (
-    <div className="UserInfoIza">
+    <div className="DadosCadastraisIza">
       <Button button="" />
       <Ativo ativo="" />
       <Link link="" />
@@ -47,4 +27,4 @@ const UserInfo: React.FC<UserInfoProps> = ({
   );
 };
 
-export default UserInfo;
+export default DadosCadastraisIza;

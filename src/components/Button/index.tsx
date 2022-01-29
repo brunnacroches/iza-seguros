@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 interface ButtonProps {
-  button?: string;
+  button: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ button }) => {
