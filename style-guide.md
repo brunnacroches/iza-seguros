@@ -1,13 +1,84 @@
 # Front-end Style Guide
 
-/_ \***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\*** _/
+QUANTOS SVG? 20
+QUANTOS TYPOGRAPHY? 16
+QUANTOS INPUTS? 10
+QUANTOS LINKS? 09
+QUANTOS BOTÕES? 05
+QUANTOS CHIP? 03
+QUANTOS MENULINK? 01
+QUANTOS PASSWORK? 01
+QUANTOS NUMEROS?
 
-/_ // Quantos botões tem?
+QUANTOS SEACHINPUT?
+QUANTOS SELECTINPUT?
+QUANTOS TEXTINPUT?
+
+QUANTOS BOTÕES?
+
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS BOTÕES?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS CHIP?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS LINKS?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS MENULINK?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS PASSWORK?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS SEACHINPUT?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS SELECTINPUT?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS TEXTINPUT?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS TYPOGRAPHY?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+  QUANTOS SVG?
+- TEM:
+- cor:
+- tamanho:
+- posição :
+
+\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\*** \_/
+
+// Quantos botões tem?
 // Qual tamanho?
 // Tem texto?
 // Onde colocar o texto?
 // Tem SVG?
-// SVG é um link ou botão? _/
+// SVG é um link ou botão? \_/
 
 /_ \***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\*** _/
 
@@ -375,7 +446,7 @@ Status
   -cor:
   email@empresacliente.com.br
 
-## ******\*\*******\*\*\*\*******\*\*******\_\_******\*\*******\*\*\*\*******\*\*******##
+## **\*\***\*\***\*\***\*\*\*\***\*\***\*\***\*\***\_\_**\*\***\*\***\*\***\*\*\*\***\*\***\*\***\*\***##
 
 ## ADICIONAR SEGURADO
 

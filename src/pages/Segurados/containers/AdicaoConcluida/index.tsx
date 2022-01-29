@@ -9,6 +9,7 @@ import SearchInput from "../../../../components/SearchInput";
 import TextInput from "../../../../components/TextInput";
 import SelectionInput from "../../../../components/SelectInput";
 import Typography from "../../../../components/Typography";
+import Divisor from "../../../../components/Divisor";
 
 export interface AdicaoConcluidaProps {
   button: string;
@@ -34,6 +35,7 @@ const AdicaoConcluida = () => {
       <TextInput textInput="" />
       <SelectionInput selectionInput="" />
       <Typography></Typography>
+      <Divisor divisor="" />
     </div>
   );
 };

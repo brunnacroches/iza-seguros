@@ -10,24 +10,43 @@
   --light-gray: hsl(204, 43%, 93%);
   --gray-blue: hsl(218, 22%, 67%);
 }
-/* colocar COR do Texto 
- */
+/* colocar COR do Texto */
 
-.primary {
+.color001 {
   color: hsl(179, 62%, 43%);
 }
 
-.secondary {
+.color002 {
   color: hsl(71, 73%, 54%);
 }
 
-.third {
+.color003 {
   color: hsl(204, 43%, 93%);
 }
 
-.fourth {
+.color004 {
   color: hsl(218, 22%, 67%);
 }
-.fifth {
+
+.color005 {
+  color: hsl(0, 0%, 100%);
+}
+
+.color006 {
+  color: hsl(179, 62%, 43%);
+}
+
+.color007 {
+  color: hsl(71, 73%, 54%);
+}
+
+.color008 {
+  color: hsl(204, 43%, 93%);
+}
+
+.color009 {
+  color: hsl(218, 22%, 67%);
+}
+.color010 {
   color: hsl(0, 0%, 100%);
 }

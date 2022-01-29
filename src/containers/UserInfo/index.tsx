@@ -9,6 +9,7 @@ import SearchInput from "../../components/SearchInput";
 import TextInput from "../../components/TextInput";
 import SelectionInput from "../../components/SelectInput";
 import Typography from "../../components/Typography";
+import Divisor from "../../components/Divisor";
 
 export interface UserInfoProps {
   button: string;
@@ -20,6 +21,7 @@ export interface UserInfoProps {
   textinput: string;
   selectioninput: string;
   typography: string;
+  divisor: string;
 }
 
 const UserInfo: React.FC<UserInfoProps> = ({
@@ -31,6 +33,7 @@ const UserInfo: React.FC<UserInfoProps> = ({
   searchinput,
   textinput,
   selectioninput,
+  divisor,
 }) => {
   return (
     <div className="UserInfoIza">

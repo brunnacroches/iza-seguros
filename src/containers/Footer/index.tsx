@@ -9,6 +9,7 @@ import SearchInput from "../../components/SearchInput";
 import TextInput from "../../components/TextInput";
 import SelectionInput from "../../components/SelectInput";
 import Typography from "../../components/Typography";
+import Divisor from "../../components/Divisor";
 
 export interface FooterProps {
   button: string;
@@ -20,6 +21,7 @@ export interface FooterProps {
   textinput: string;
   selectioninput: string;
   typography: string;
+  divisor: string;
 }
 
 const Footer: React.FC<FooterProps> = ({
@@ -31,6 +33,7 @@ const Footer: React.FC<FooterProps> = ({
   searchinput,
   textinput,
   selectioninput,
+  divisor,
 }) => {
   return (
     <div className="FooterIza">

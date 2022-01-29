@@ -9,6 +9,7 @@ import SearchInput from "../../components/SearchInput";
 import TextInput from "../../components/TextInput";
 import SelectionInput from "../../components/SelectInput";
 import Typography from "../../components/Typography";
+import Divisor from "../../components/Divisor";
 
 export interface MenuProps {
   button: string;
@@ -20,6 +21,7 @@ export interface MenuProps {
   textinput: string;
   selectioninput: string;
   typography: string;
+  divisor: string;
 }
 
 const Menu: React.FC<MenuProps> = ({
@@ -31,6 +33,7 @@ const Menu: React.FC<MenuProps> = ({
   searchinput,
   textinput,
   selectioninput,
+  divisor,
 }) => {
   return (
     <div className="MenuIza">

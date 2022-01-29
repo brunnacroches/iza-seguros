@@ -8,6 +8,7 @@ import SearchInput from "../../components/SearchInput";
 import TextInput from "../../components/TextInput";
 import SelectionInput from "../../components/SelectInput";
 import Typography from "../../components/Typography";
+import Divisor from "../../components/Divisor";
 
 import "./style.css";
 
@@ -23,6 +24,7 @@ const DadosCadastraisIza = () => {
       <TextInput textInput="" />
       <SelectionInput selectionInput="" />
       <Typography></Typography>
+      <Divisor divisor="" />
     </div>
   );
 };
