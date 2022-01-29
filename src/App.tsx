@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
-// import LoginForm from "./pages/Login/containers/LoginForm";
+import GlobalStyles from "./styles/GlobalStyles";
+import LoginForm from "./pages/Login/containers/LoginForm";
 
-import App from "./App";
+// import ReactDOM from "react-dom";
 
 // import DadosCadastraisXX from "./pages/DadosCadastraisXX";
 // import Dashboard from "./pages/Dashboard";
@@ -16,16 +16,21 @@ import App from "./App";
 
 import "./global.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const App: React.FC = () => {
+  return (
+    // EMPACOTAR
+    <>
+      <GlobalStyles />
+      <LoginForm />
+    </>
+  );
+};
 
-// ReactDOM.render(<LoginForm />, document.getElementById("root"));
+export default App;
+
 // ReactDOM.render(<DadosCadastraisXX />, document.getElementById("root"));
 // ReactDOM.render(<Dashboard />, document.getElementById("root"));
+// ReactDOM.render(<LoginForm />, document.getElementById("root"));
 // ReactDOM.render(<PagamentosXX />, document.getElementById("root"));
 // ReactDOM.render(<PainelXX />, document.getElementById("root"));
 // ReactDOM.render(<AdicaoConcluida />, document.getElementById("root"));

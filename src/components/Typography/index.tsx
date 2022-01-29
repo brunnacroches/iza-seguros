@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Container } from "./styles";
 
 interface TypographyProps {
   // type: string;
@@ -52,7 +53,11 @@ const Typography: React.FC<TypographyProps> = ({
   let className = "typography";
   className += ` ${variant} ${color} ${number}`;
 
-  return <h1 className={className}>{children} </h1>;
+  return (
+    <Container>
+      <h1 className={className}>{children} </h1>
+    </Container>
+  );
 };
 
 Typography.defaultProps = defaultProps;

@@ -7,24 +7,19 @@ import PasswordInput from "../../../../components/PasswordInput";
 import SearchInput from "../../../../components/SearchInput";
 import TextInput from "../../../../components/TextInput";
 import SelectionInput from "../../../../components/SelectInput";
-import Typography from "../../../../components/Typography";
 import Divisor from "../../../../components/Divisor";
+import Typography from "../../../../components/Typography";
 
-import "./style.css";
+import "./style.ts";
 
-const LoginForm = () => {
+export interface LoginFormProps {}
+
+const LoginForm: React.FC = () => {
   return (
     <div className="LoginFormIza">
-      <Button button="" />
-      <Ativo ativo="" />
-      <Link link="" />
-      <MenuLink menulink="" />
-      <PasswordInput passwordInput="" />
-      <SearchInput searchInput="" />
-      <TextInput textInput="" />
-      <SelectionInput selectionInput="" />
-      <Typography></Typography>
-      <Divisor divisor="" />
+      <div className="Teste">
+        <p>Teste Page Login</p>
+      </div>
     </div>
   );
 };

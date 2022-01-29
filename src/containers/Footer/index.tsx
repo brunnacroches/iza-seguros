@@ -46,6 +46,7 @@ const Footer: React.FC<FooterProps> = ({
       <TextInput textInput="" />
       <SelectionInput selectionInput="" />
       <Typography></Typography>
+      <Divisor divisor="" />
     </div>
   );
 };
