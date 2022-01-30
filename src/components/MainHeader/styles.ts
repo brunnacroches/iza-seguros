@@ -1,10 +1,18 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* ⤵︎ ELE TEM QUE FICAR POSICIONADO NO MEU AS > 
-ELE COCUPA A LINHA INTEIRA (PRIMEIRA E SEGUNDA LINHA DA PRIMEIRA COLUNA ⤵︎ */
   grid-area: MH;
+  background-color: ${props => props.theme.colors.secondary};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-  background-color: #363740;
-  /* background-color: #ececec; */
+export const Profile = styled.div`
+`;
+
+export const Welcome = styled.h3`
+`;
+
+export const UserName = styled.span`
 `;

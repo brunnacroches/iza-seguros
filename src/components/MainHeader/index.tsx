@@ -1,12 +1,22 @@
-import React from "react";
-import { Container } from "./styles";
+import React from 'react';
+import { 
+  Container, 
+  Profile, 
+  Welcome, 
+  UserName 
+} from './styles';
 
-const Header: React.FC = () => {
+const MainHeader: React.FC = () => {
   return (
     <Container>
-      <h1>Header</h1>
+      <h1>Toogle</h1>
+
+      <Profile>
+          <Welcome>Olá</Welcome>
+          <UserName>Lucas Chagas</UserName>
+      </Profile>
     </Container>
   );
 };
 
-export default Header;
+export default MainHeader;

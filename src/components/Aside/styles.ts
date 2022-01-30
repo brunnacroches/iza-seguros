@@ -1,12 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  /** 
- * ? ELE TEM QUE FICAR POSICIONADO NO MEU AS > 
-* ? ELE COCUPA A LINHA INTEIRA (PRIMEIRA E SEGUNDA LINHA DA PRIMEIRA COLUNA ⤵︎ 
-*/
   grid-area: AS;
-  background-color: #363740;
+  color: ${(props) => props.theme.colors.info};
+  background-color: ${(props) => props.theme.colors.primary};
 `;
 
 /**
@@ -20,3 +17,6 @@ export const Container = styled.div`
  * @param myParam The parameter of this method
  *
  */
+/*
+ * ? ELE TEM QUE FICAR POSICIONADO NO MEU AS >
+ * ? ELE COCUPA A LINHA INTEIRA (PRIMEIRA E SEGUNDA LINHA DA PRIMEIRA COLUNA ⤵︎  */
