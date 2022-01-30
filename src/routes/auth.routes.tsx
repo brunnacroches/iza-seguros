@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import LoginForm from "../pages/Login/containers/LoginForm";
+import Login from "../pages/Login";
 
 const AuthRoutes: React.FC = () => (
   <Routes>
-    <Route path="/" element={LoginForm} />
+    <Route path="/" element={Login} />
   </Routes>
 );
 
