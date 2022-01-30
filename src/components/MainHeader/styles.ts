@@ -6,9 +6,14 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 0 10px;
+
+  border-bottom: 1px solid ${props => props.theme.colors.black};
 `;
 
 export const Profile = styled.div`
+  color: ${props => props.theme.colors.orange}
 `;
 
 export const Welcome = styled.h3`

@@ -26,9 +26,10 @@ COMENTAR FUNCAO !
 - - YARN STYLE COMPONENTS : yarn add styled-components
 - - YARN STYLE COMPONENTS : yarn add styled-components -D
     (-D significa que os tipos vão ser usados somente em ambiente de desenvolvimento)
-- - YARN
-- - YARN
-- ! YARN !
+- - YARN yarn add react-switch ( ADD BOTAO LIGA-DESLIGA)
+- - YARN MUI yarn add @mui/material @emotion/react @emotion/styled
+- ! YARN MUI yarn add @mui/material @mui/styled-engine-sc styled-components
+
 - ? YARN
   \*/
 
