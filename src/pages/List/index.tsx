@@ -3,23 +3,23 @@
 import React from "react";
 import { Container } from "./styles";
 
-const Login: React.FC = () => {
+const List: React.FC = () => {
   return (
     <Container>
-      <h1>Login</h1>
+      <h1>List</h1>
     </Container>
   );
 };
 
-export default Login;
+export default List;
 
 /**
  */
 /**
- * @O @MEU @Login @É @TIPO @FC
- * ? ==> const Login:
+ * @O @MEU @List @É @TIPO @FC
+ * ? ==> const List:
  * * NOME DA PÁGINA
- * ? -> const Login <-
+ * ? -> const List <-
  * * ESSES DOIS PONTOS :
  * ? -> : <- É PARA ATRIBUIR A TIPAGEM DA MINHA PÁGINA
  * * A TIPAGEM DA PÁGINA:
@@ -29,7 +29,7 @@ export default Login;
  * * SEMPRE TEM QUE RETONRAR PELO MENOS 1 ELEMENTO !SEMPRE!
  * ? return (
  * ? <Container>
- * ?   <h1>Login</h1>
+ * ?   <h1>List</h1>
  * ? </Container>
  * ? );
  */

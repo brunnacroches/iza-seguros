@@ -1,3 +1,37 @@
+COMENTAR COLORIDO NO CODIGO
+
+- - IMPORTANTE
+- ! ATENÇÃO!
+- ? DUVIDA
+- TODO MAIUSCULO
+- @param
+- @param myParam The parameter of this method
+- \*/
+
+COMENTAR FUNCAO !
+
+/\*\*
+
+- - IMPORTANTE
+- ! ATENÇÃO!
+- ? DUVIDA
+- TODO MAIUSCULO
+- @param
+- @param myParam The parameter of this method
+- \*/
+
+/\*\*
+
+- - START YARN : yarn start
+- - YARN STYLE COMPONENTS : yarn add styled-components
+- - YARN STYLE COMPONENTS : yarn add styled-components -D
+    (-D significa que os tipos vão ser usados somente em ambiente de desenvolvimento)
+- - YARN
+- - YARN
+- ! YARN !
+- ? YARN
+  \*/
+
 # Getting Started with Create React App
 
 ### CRIAR PROJETO
