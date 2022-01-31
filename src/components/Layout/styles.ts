@@ -4,7 +4,8 @@ export const Container = styled.div`
   /* ⤵︎ UM GRID É CONSTITUÍDO DE COLUNAS E LINHAS  */
   display: grid;
   /* ⤵︎  A PRIMEIRA COLUNA VAI TER 250PX E O RESTANTE O TANTO QUE ESTIVER DISPONÍVEL  (AUTO) */
-  grid-template-columns: 300px auto;
+  grid-template-columns: 300px ;
+  height: 90vh;
   /* ⤵︎ MH (MAIN HEADER ) VAI TER ALTURA DE 70PX  */
   grid-template-rows: 70px auto;
 
@@ -12,5 +13,5 @@ export const Container = styled.div`
     'AS MH'
     'AS CT';
     
-  height: 100vh;
+  height: 90vh;
 `;

@@ -15,7 +15,7 @@ html, body, #root {
 }
 
 /* sem borda, sem outline(sem definir a cor do contorno) */
-*, button, input {
+*, botton, input {
   border: 0;
   outline: 0;
   font-family: 'Red Hat Display', sans-serif;
@@ -23,7 +23,7 @@ html, body, #root {
 }
 
 /* para todos os botões */
-button {
+botton {
   cursor: pointer;
 }
 

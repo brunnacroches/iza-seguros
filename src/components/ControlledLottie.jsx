@@ -6,7 +6,7 @@ class ControlledLottie extends Component {
   state = { isStopped: false, isPaused: false };
 
   render() {
-    const buttonStyle = {
+    const bottonStyle = {
       display: 'flex',
       margin: '0px auto',
       marginRight: '0px',
@@ -35,24 +35,21 @@ class ControlledLottie extends Component {
           isStopped={this.state.isStopped}
           isPaused={this.state.isPaused}
         />
-        <button
-          style={buttonStyle}
+        <botton
+          style={bottonStyle}
           onClick={() => this.setState({ isStopped: true })}
         >
-          Stop
-        </button>
-        <button
-          style={buttonStyle}
+        </botton>
+        <botton
+          style={bottonStyle}
           onClick={() => this.setState({ isStopped: false, isPaused: false })}
         >
-          Play
-        </button>
-        <button
-          style={buttonStyle}
+        </botton>
+        <botton
+          style={bottonStyle}
           onClick={() => this.setState({ isPaused: !this.state.isPaused })}
         >
-          Pause
-        </button>
+        </botton>
       </div>
     );
   }

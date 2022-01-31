@@ -1,25 +1,35 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
-
 export default {
   title: 'light',
-
-  // COR TEMA LIGHT
   colors: {
-    // PRIMARIAS
+
+    // cor do menu
+    menu: '#363740',
+    // cor do header (cabeçalho)
+    header: 'hsl(228,45%,97%)',
+    // cor do fundo
+    content: '#FFFFFF',
+    textmenu: '#E0D3FF',
+    textcontent: '#FF5148',
+    texthearder: '#FF5148',
+    backfooter: '#680265',
+
+    // ? PRIMARIAS
     // cor do menu
     primary: '#363740',
-    // cor do header
+    // cor do header (cabeçalho)
     secondary: 'hsl(228,45%,97%)',
     // cor do fundo
     tertiary: 'hsl(0,0%,100%)',
 
-    // FOOTER
+
+    // ? FOOTER
     // cor do footer e botao
     purple: '#680265',
     // cor do texto botao
     white: '#FFFFFF',
 
-    // BOTAO
+   // ? BOTAO
     // cor da logo / botão
     orange: '#FF5148',
     //cor botão ATIVO
@@ -27,12 +37,12 @@ export default {
     // cor botão Segurados
     violet: '#E0D3FF',
 
-    // CORTEXTO
+    // ?  COR TEXTO 
     black: '#000000',
     gray: '#717171',
     clear: '#F7F8FC',
 
-    //  COR TEXTO TEMA
+    // ?  COR TEXTO TEMA
     info: '#ded1c0',
     success: '#FF5148',
     warning: '#363740',

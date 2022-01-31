@@ -1,3 +1,4 @@
+
 // SOBRESCREVER TIPOS DE ARQUIVOS
 // vamos ter uma tipagem que vai estar disponível para a aplicação inteira
 
@@ -9,26 +10,39 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     title: string;
 
-    colors: {
-      primary: string;
-      secondary: string;
-      tertiary: string;
+      colors: {
+        menu: string; 
+        header: string; 
+        content: string; 
 
-      purple: string;
-      white: string;
+        textmenu: string; 
+        textcontent: string; 
+        texthearder: string; 
 
-      orange: string;
-      green: string;
-      violet: string;
-
-      black: string;
-      info: string;
-      success: string;
-      warning: string;
-      gray: string;
-      clear: string;
-      body1: string;
-      body2: string;
+        backfooter: string; 
+  
+        primary: string;
+        secondary: string;
+        tertiary: string;
+  
+        purple: string;
+        white: string;
+        brow: string;
+  
+        orange: string;
+        green: string;
+        violet: string;
+  
+        black: string;
+        info: string;
+        success: string;
+        warning: string;
+        
+        gray: string;
+        clear: string;
+        body1: string;
+        body2: string;
+      }
     };
-  }
 }
+  

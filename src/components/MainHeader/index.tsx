@@ -1,12 +1,19 @@
 import  Toggle  from '../Toggle';
+import Lottie from 'react-lottie';
 import React, {useMemo} from 'react';
+import out from '../../assets/lotties/out.json';
 // o userMemo é um hooks decora o valor 
 import emojis from '../../utils/emojis';
 import { 
   Container, 
-  Profile, 
-  Welcome, 
+  Profile,  
   UserName,
+  UserLogado,
+  Welcome,
+  EmpresaClient,
+  EmailCliente,
+  LottiOut,
+  LinkSair
 } from './styles';
 
 const MainHeader: React.FC = () => {
@@ -18,12 +25,25 @@ const MainHeader: React.FC = () => {
   return (
     <Container>
       {/*  PRIMEIRO ELEMENTO  */}
+      <Toggle/> 
       <Profile>
           <Welcome>Olá{emoji}</Welcome>
           <UserName>Lucas Chagas</UserName>
       </Profile>
-      <Toggle/> 
       {/*  SEGUNDO ELEMENTO */}
+      <UserLogado>
+          <EmpresaClient>Empresa Cliente </EmpresaClient>
+          <EmailCliente href="#">email@empresacliente.com.br</EmailCliente>
+          <LottiOut href="#">
+            <Lottie 
+                options={{
+                  animationData: out,
+                  loop: true,
+                }}
+                />
+          </LottiOut>
+          <LinkSair href="#">Sair</LinkSair>
+      </UserLogado>
     </Container>
   );
 };

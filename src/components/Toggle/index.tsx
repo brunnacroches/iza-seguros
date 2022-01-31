@@ -55,13 +55,14 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     opacity: 1,
     backgroundColor: theme.palette.mode === 'dark' ? '#ecb5b2' : '#ecb5b2',
     borderRadius: 39 / 2,
+    
   },
 }));
 
 export default function CustomizedSwitches() {
   return (
     <FormGroup>
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack direction="row" spacing={1} alignItems="center" >
       {/* <Typography>on</Typography> */}
       {/* // ! APAGAR "defaultChecked" PARA DESABILITAR BOTÃO  */}
       <MaterialUISwitch inputProps={{ 'aria-label': 'ant design' }} />

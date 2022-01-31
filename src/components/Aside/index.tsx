@@ -1,3 +1,4 @@
+import { Divider } from "@mui/material";
 import React from "react";
 import Lottie from 'react-lottie';
 import bank from '../../assets/lotties/bank.json';
@@ -32,7 +33,8 @@ import {
   LottiePay,
   LottieDados,
   LottieMensagem,
-  MenuSuporte
+  MenuSuporte,
+  DividerLine
 
 } from './styles';
 
@@ -46,25 +48,25 @@ const Aside: React.FC = () => {
         <LogoIza src={LogoIzaZa} alt="" />
       </Header>
       {/* PEOPLE IZA */}
-        <LottiePeople>
+        <LottiePeople href="#">
           <Lottie
               options={{
               animationData: people,
               loop: true,
             }}
           />
-        </LottiePeople>
+        </LottiePeople >
       {/* GRID IZA */}
-        <LottieGrid>
+        <LottieGrid href="#">
           <Lottie
               options={{
               animationData: grid,
               loop: true,
             }}
           />
-        </LottieGrid>
+        </LottieGrid >
       {/* PAY IZA*/}
-        <LottiePay>
+        <LottiePay href="#">
           <Lottie
               options={{
               animationData: bank,
@@ -73,16 +75,16 @@ const Aside: React.FC = () => {
           />
         </LottiePay>
       {/* DADOS IZA*/}
-        <LottieDados>
+        <LottieDados href="#">
           <Lottie
               options={{
               animationData: cadastro,
               loop: true,
             }}
           />
-        </LottieDados>
+        </LottieDados >
       {/* MENSAGEM IZA */}         
-        <LottieMensagem>
+        <LottieMensagem href="#">
           <Lottie
               options={{
               animationData: message,
@@ -108,6 +110,7 @@ const Aside: React.FC = () => {
           Dados cadastrais
         </MenuItemLink>
       </MenuContainer>
+      <DividerLine />
       <MenuSuporte href="#">
         Suporte
         </MenuSuporte>
@@ -116,3 +119,23 @@ const Aside: React.FC = () => {
 };
 
 export default Aside;
+
+
+/**
+ * @O @MEU @DASHBOARD @É @TIPO @FC
+ * ? ==> const Dashboard:
+ * * NOME DA PÁGINA
+ * ? -> const Dashboard <-
+ * * ESSES DOIS PONTOS :
+ * ? -> : <- É PARA ATRIBUIR A TIPAGEM DA MINHA PÁGINA
+ * * A TIPAGEM DA PÁGINA:
+ * ? -> React.FC <- ( A PÁGINA É DO TIPO DE UM COMPONENTE FUNCIONAL )
+ * * APONTANDO PARA UMA FUNÇÃO :
+ * ? -> = () => {} <- (ARRAY FUNCTION)
+ * * SEMPRE TEM QUE RETONRAR PELO MENOS 1 ELEMENTO !SEMPRE!
+ * ? return (
+ * ? <Container>
+ * ?   <h1>Dashboard</h1>
+ * ? </Container>
+ * ? );
+ */

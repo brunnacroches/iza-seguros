@@ -5,7 +5,9 @@ export const Container = styled.div`
 /* ÁREA QUE QUE O MENU VAI FICAR DISPONÍVEL */
   grid-area: AS;
   font-family: Work Sans;
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.orange};
+  border-radius:0 0 16px 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   /*/ PARA QUE TODO O CONTEÚDO ANDE PARTINDO DA ESQUERDA */
   padding-left: 30px;
 `;
@@ -69,7 +71,7 @@ export const MenuContainer = styled.nav`
 `;
 
 export const MenuItemLink = styled.a`
-color: ${(props) => props.theme.colors.violet};
+color: ${(props) => props.theme.colors.white};
 font-weight: bold;
 font-size: 17px;
 display: flex;
@@ -86,7 +88,7 @@ transition: opacity .3s;
 }
 
 `;
-export const LottiePeople = styled.div`
+export const LottiePeople = styled.a`
   display: flex;
   align-items: center;
   height: 40px;
@@ -94,10 +96,9 @@ export const LottiePeople = styled.div`
   position: relative;
   top: 142px;
   left: 35px;
-  color: ${(props) => props.theme.colors.violet};
 `;
 
-export const LottieGrid = styled.div`
+export const LottieGrid = styled.a`
   display: flex;
   align-items: center;  
   height: 40px;
@@ -105,9 +106,8 @@ export const LottieGrid = styled.div`
   position: relative;
   top: 142px;
   left: 35px;
-  color: ${(props) => props.theme.colors.violet};
 `;
-export const LottiePay = styled.div`
+export const LottiePay = styled.a`
   display: flex;
   align-items: center;
   height: 40px;
@@ -115,9 +115,8 @@ export const LottiePay = styled.div`
   position: relative;
   top: 142px;
   left: 35px;
-  color: ${(props) => props.theme.colors.violet};
 `;
-export const LottieDados = styled.div`
+export const LottieDados = styled.a`
   display: flex;
   align-items: center;
   height: 40px;
@@ -125,17 +124,15 @@ export const LottieDados = styled.div`
   position: relative;
   top: 142px;
   left: 35px;
-  color: ${(props) => props.theme.colors.violet};
 `;
-export const LottieMensagem = styled.div`
+export const LottieMensagem = styled.a`
   display: flex;
   align-items: center;
   height: 40px;
   width: 25px;
   position: relative;
-  top: 318px;
+  top: 253px;
   left: 30px;
-  color: ${(props) => props.theme.colors.violet};
 `;
 
 
@@ -143,9 +140,9 @@ export const MenuSuporte = styled.a`
   display: flex;
   align-items: center;
   position: relative;
-  top: 235px;
-  left: -70px;
-  color: ${(props) => props.theme.colors.violet};
+  top: 170px;
+  left:-70px;
+  color: ${(props) => props.theme.colors.white};
   /*/ DEIXA UM DO LADO DO OUTRO */
     display: flex;
   /*/ DEIXA TUDO EM COLUNAS */
@@ -164,3 +161,30 @@ export const MenuSuporte = styled.a`
 }
 `;
 
+export const DividerLine = styled.div`
+  width: 290px;
+  left: -28px;
+  height: 0.5px;
+  background-color: ${(props) => props.theme.colors.gray};
+  position: relative;
+  bottom: -55px;
+`;
+
+/**
+ * @O @MEU @DASHBOARD @É @TIPO @FC
+ * ? ==> const Dashboard:
+ * * NOME DA PÁGINA
+ * ? -> const Dashboard <-
+ * * ESSES DOIS PONTOS :
+ * ? -> : <- É PARA ATRIBUIR A TIPAGEM DA MINHA PÁGINA
+ * * A TIPAGEM DA PÁGINA:
+ * ? -> React.FC <- ( A PÁGINA É DO TIPO DE UM COMPONENTE FUNCIONAL )
+ * * APONTANDO PARA UMA FUNÇÃO :
+ * ? -> = () => {} <- (ARRAY FUNCTION)
+ * * SEMPRE TEM QUE RETONRAR PELO MENOS 1 ELEMENTO !SEMPRE!
+ * ? return (
+ * ? <Container>
+ * ?   <h1>Dashboard</h1>
+ * ? </Container>
+ * ? );
+ */

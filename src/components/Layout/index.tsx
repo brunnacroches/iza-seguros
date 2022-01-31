@@ -1,16 +1,19 @@
 import React from "react";
+import Lottie from 'react-lottie';
 import { Container } from "./styles";
 
 import MainHeader from "../MainHeader";
 import Aside from "../Aside";
 import Content from "../Content";
 
-const Layout: React.FC = () => {
+const Layout: React.FC = ({children}) => {
   return (
     <Container>
         <MainHeader />
         <Aside />
-        <Content />
+        <Content>
+          {children}
+        </Content>
     </Container>
   );
 }
