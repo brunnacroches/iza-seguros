@@ -18,7 +18,8 @@ html, body, #root {
 *, button, input {
   border: 0;
   outline: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+
 }
 
 /* para todos os botões */

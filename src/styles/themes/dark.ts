@@ -7,7 +7,7 @@ export default {
   colors: {
     // PRIMARIAS
     // cor do menu
-    primary: 'hsl(199,7%,23%)',
+    primary: '#363740',
     // cor do header
     secondary: 'hsl(233,8%,23%)',
     // cor do fundo
@@ -25,7 +25,7 @@ export default {
     //cor botão ATIVO
     green: '#15CF74',
     // cor botão Segurados
-    violtet: '#E0D3FF',
+    violet: '#E0D3FF',
 
     // CORTEXTO
     black: '#000000',

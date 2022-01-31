@@ -19,7 +19,7 @@ declare module 'styled-components' {
 
       orange: string;
       green: string;
-      violtet: string;
+      violet: string;
 
       black: string;
       info: string;

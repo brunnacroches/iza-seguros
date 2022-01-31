@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Lottie from 'react-lottie';
-import bank from '../assets/lotties/bank.json';
+import people from '../assets/lotties/people.json';
 
 class ControlledLottie extends Component {
   state = { isStopped: false, isPaused: false };
@@ -8,11 +8,11 @@ class ControlledLottie extends Component {
   render() {
     const buttonStyle = {
       display: 'flex',
-      margin: '10px auto',
-      marginRight: '10px',
+      margin: '0px auto',
+      marginRight: '0px',
       border: 'none',
       color: 'white',
-      backgroundColor: '#647DFF',
+      backgroundColor: '#E0D3FF',
       borderRadius: '2px',
       fontSize: '15px',
     };
@@ -20,7 +20,7 @@ class ControlledLottie extends Component {
     const defaultOptions = {
       loop: true,
       autoplay: true,
-      bank: bank,
+      animationData: people,
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice',
       },
@@ -28,12 +28,10 @@ class ControlledLottie extends Component {
 
     return (
       <div className="controlled">
-        <h1>Controlled Lottie</h1>
-        <p>Uses state manipulation to start, stop and pause animations</p>
         <Lottie
           options={defaultOptions}
-          height={100}
-          width={100}
+          height={10}
+          width={10}
           isStopped={this.state.isStopped}
           isPaused={this.state.isPaused}
         />

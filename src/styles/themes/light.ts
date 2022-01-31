@@ -25,7 +25,7 @@ export default {
     //cor botão ATIVO
     green: '#15CF74',
     // cor botão Segurados
-    violtet: '#E0D3FF',
+    violet: '#E0D3FF',
 
     // CORTEXTO
     black: '#000000',

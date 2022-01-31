@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Lottie from 'react-lottie';
-import bank from '../assets/lotties/bank.json';
+import people from '../assets/lotties/people.json';
 
 class UncontrolledLottie extends Component {
   render() {
     const defaultOptions = {
       loop: true,
       autoplay: true,
-      bank: bank,
+      animationData: people,
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice',
       },
@@ -15,12 +15,10 @@ class UncontrolledLottie extends Component {
 
     return (
       <div>
-        <h1>Lottie</h1>
-        <p>Base animation free from external manipulation</p>
         <Lottie
-          options={defaultOptions}
-          height={100}
-          width={100}
+          options={people}
+          height={10}
+          width={10}
         />
       </div>
     );
