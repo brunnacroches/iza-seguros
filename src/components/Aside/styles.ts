@@ -1,3 +1,4 @@
+import { borderRight, fontSize } from '@mui/system';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -24,6 +25,11 @@ export const LogoIzaP = styled.img`
   position: relative;
   top: -10px;
   left: 60px;
+
+  > svg {
+  font-size: 18px;
+  margin-right: 5px
+}
   
 `;
 // ! LOGO IZA => I
@@ -33,6 +39,11 @@ export const LogoIzaIP = styled.img`
   position: relative;
   left: 42px;
   top: 30px;
+
+  > svg {
+  font-size: 18px;
+  margin-right: 5px
+}
 `;
 // ! LOGO IZA => IZA
 export const LogoIza = styled.img`
@@ -41,6 +52,11 @@ export const LogoIza = styled.img`
   position: relative;
   top: 30px;
   left: 45px;
+
+> svg {
+  font-size: 18px;
+  margin-right: 5px
+}
 `;
 
 export const MenuContainer = styled.nav`
@@ -56,6 +72,8 @@ export const MenuItemLink = styled.a`
 color: ${(props) => props.theme.colors.violet};
 font-weight: bold;
 font-size: 17px;
+display: flex;
+align-items: center;
 /*/ ALTURA ENTRE OS LINKS */
 margin: 9px 0;
 /*/ TIRAR O SUBLINHADO */
@@ -69,6 +87,8 @@ transition: opacity .3s;
 
 `;
 export const LottiePeople = styled.div`
+  display: flex;
+  align-items: center;
   height: 40px;
   width: 25px;
   position: relative;
@@ -78,6 +98,8 @@ export const LottiePeople = styled.div`
 `;
 
 export const LottieGrid = styled.div`
+  display: flex;
+  align-items: center;  
   height: 40px;
   width: 25px;
   position: relative;
@@ -86,6 +108,8 @@ export const LottieGrid = styled.div`
   color: ${(props) => props.theme.colors.violet};
 `;
 export const LottiePay = styled.div`
+  display: flex;
+  align-items: center;
   height: 40px;
   width: 25px;
   position: relative;
@@ -94,6 +118,8 @@ export const LottiePay = styled.div`
   color: ${(props) => props.theme.colors.violet};
 `;
 export const LottieDados = styled.div`
+  display: flex;
+  align-items: center;
   height: 40px;
   width: 25px;
   position: relative;
@@ -102,19 +128,23 @@ export const LottieDados = styled.div`
   color: ${(props) => props.theme.colors.violet};
 `;
 export const LottieMensagem = styled.div`
+  display: flex;
+  align-items: center;
   height: 40px;
   width: 25px;
   position: relative;
   top: 318px;
-  left: 35px;
+  left: 30px;
   color: ${(props) => props.theme.colors.violet};
 `;
 
 
 export const MenuSuporte = styled.a`
+  display: flex;
+  align-items: center;
   position: relative;
   top: 235px;
-  left: -3px;
+  left: -70px;
   color: ${(props) => props.theme.colors.violet};
   /*/ DEIXA UM DO LADO DO OUTRO */
     display: flex;
@@ -133,3 +163,4 @@ export const MenuSuporte = styled.a`
   opacity: .7;
 }
 `;
+

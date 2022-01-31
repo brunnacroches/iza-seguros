@@ -17,8 +17,6 @@ class UncontrolledLottie extends Component {
       <div>
         <Lottie
           options={people}
-          height={10}
-          width={10}
         />
       </div>
     );

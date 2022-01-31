@@ -45,6 +45,7 @@ const Aside: React.FC = () => {
         <LogoIzaIP src={LogoIzaI} alt="" />
         <LogoIza src={LogoIzaZa} alt="" />
       </Header>
+      {/* PEOPLE IZA */}
         <LottiePeople>
           <Lottie
               options={{
@@ -53,7 +54,7 @@ const Aside: React.FC = () => {
             }}
           />
         </LottiePeople>
-
+      {/* GRID IZA */}
         <LottieGrid>
           <Lottie
               options={{
@@ -62,7 +63,7 @@ const Aside: React.FC = () => {
             }}
           />
         </LottieGrid>
-
+      {/* PAY IZA*/}
         <LottiePay>
           <Lottie
               options={{
@@ -71,7 +72,7 @@ const Aside: React.FC = () => {
             }}
           />
         </LottiePay>
-
+      {/* DADOS IZA*/}
         <LottieDados>
           <Lottie
               options={{
@@ -80,7 +81,7 @@ const Aside: React.FC = () => {
             }}
           />
         </LottieDados>
-
+      {/* MENSAGEM IZA */}         
         <LottieMensagem>
           <Lottie
               options={{

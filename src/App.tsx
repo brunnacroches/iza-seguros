@@ -10,11 +10,12 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={light}>
       <GlobalStyles />
-      <Layout />
+      <Layout>
       <div className="lotties">
           <UncontrolledLottie />
           <ControlledLottie />
       </div>
+      </Layout>
     </ThemeProvider>
   );
 };
