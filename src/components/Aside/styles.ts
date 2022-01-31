@@ -4,7 +4,7 @@ export const Container = styled.div`
 /* ÁREA QUE QUE O MENU VAI FICAR DISPONÍVEL */
   grid-area: AS;
   background-color: ${(props) => props.theme.colors.primary};
-  /* PARA QUE TODO O CONTEÚDO ANDE PARTINDO DA ESQUERDA */
+  /*/ PARA QUE TODO O CONTEÚDO ANDE PARTINDO DA ESQUERDA */
   padding-left: 30px;
 `;
 
@@ -44,13 +44,29 @@ export const LogoIza = styled.img`
 `;
 
 export const MenuContainer = styled.nav`
+  /*/ DEIXA UM DO LADO DO OUTRO */
   display: flex;
-  margin-top: 50px;
+  /*/ DEIXA TUDO EM COLUNAS */
+  flex-direction: column;
+  margin-top: 100px;
 `;
 
 export const MenuItemLink = styled.a`
+color: ${(props) => props.theme.colors.violtet};
+font-weight: bold;
+/*/ ALTURA ENTRE OS LINKS */
+margin: 10px 0;
+/*/ TIRAR O SUBLINHADO */
+text-decoration:none;
+/*/ TRANSICAO DA TROCA */
+transition: opacity .3s;
+/*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+&:hover {
+  opacity: .7;
+}
 `;
-
+export const MenuLottie = styled.button`
+`;
 
 
 

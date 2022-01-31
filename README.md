@@ -30,7 +30,7 @@ COMENTAR FUNCAO !
 - - YARN MUI yarn add @mui/material @emotion/react @emotion/styled
 - ! YARN MUI yarn add @mui/material @mui/styled-engine-sc styled-components
 
-- ? YARN
+- ? YARN yarn add @types/react-lottie
   \*/
 
 # Getting Started with Create React App

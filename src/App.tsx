@@ -1,7 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
-
+import UncontrolledLottie from './components/UncontrolledLottie';
+import ControlledLottie from './components/ControlledLottie';
 import Layout from './components/Layout';
 import light from './styles/themes/light';
 
@@ -10,6 +11,10 @@ const App: React.FC = () => {
     <ThemeProvider theme={light}>
       <GlobalStyles />
       <Layout />
+      <div className="lotties">
+          <UncontrolledLottie />
+          <ControlledLottie />
+      </div>
     </ThemeProvider>
   );
 };
