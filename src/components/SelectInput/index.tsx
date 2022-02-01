@@ -43,38 +43,37 @@ export default SelectInput;
 
 
 // ! PARA ADD NO COMPONENTE 
-
 // import React from "react";
 // import plus from '../../assets/lotties/add.json';
 // import Lottie from 'react-lottie';
-// ! import SelectInput from "../SelecInput";
+// ? import SelectInput from "../SelecInput";
 // import Botton from "../Botton";
 // import InputLabel from "../InputLabel";
 
 // import { 
 //   Container,
 //   TitleContainer,
-// !  Controllers,
+// ?  Controllers,
 //   BottonNovoIza,
 //   LottiePlus
 // } from "./styles";
 
 // const ContentHeader: React.FC = () => {
 
-//  ! const options = [
-//  !  {value: 'Rodrigo', label: 'Rodrigo'},
-//  !   {value: 'Maria', label: 'Maria'},
-//   !  {value: 'Ana', label: 'Ana'}
-//   ! ]
+//~ const options = [
+//~  {value: 'Rodrigo', label: 'Rodrigo'},
+//~  {value: 'Maria', label: 'Maria'},
+//~ {value: 'Ana', label: 'Ana'}
+//~ ]
 
 //   return (
 //     <Container>
 //       <TitleContainer>
 //         <h1>Segurados</h1>
 //       </TitleContainer>
-//      ! <SelectInput options={options}/>
-//      ! <SelectInput options={options}/>
-//      ! <SelectInput options={options}/>
+//      ? <SelectInput options={options}/>
+//      ? <SelectInput options={options}/>
+//      ? <SelectInput options={options}/>
 //       <InputLabel />
 //       <Controllers>
 //         {/* <Botton /> */}
