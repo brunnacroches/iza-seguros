@@ -27,6 +27,13 @@ export const LogoIzaP = styled.img`
   position: relative;
   top: -10px;
   left: 60px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 
   > svg {
   font-size: 18px;
@@ -42,10 +49,9 @@ export const LogoIzaIP = styled.img`
   left: 42px;
   top: 30px;
 
-  > svg {
-  font-size: 18px;
-  margin-right: 5px
-}
+  
+
+
 `;
 // ! LOGO IZA => IZA
 export const LogoIza = styled.img`
