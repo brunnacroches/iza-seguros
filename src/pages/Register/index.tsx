@@ -2,18 +2,18 @@
 // TELA SUPORTE
 
 import React from "react";
+import ContentHeader from "../../components/ContentHeader";
+import SelectInput from "../../components/SelectInput";
+import DataTables from '../../components/DataTables'; 
+
 import { Container } from "./styles";
 
-export interface SuporteProps {}
 
 const Register: React.FC = () => {
+// ~não precisa importar os inputs aqui
   return (
     <Container>
-      <div className="SuporteIza">
-        <div className="Teste">
-          <p>Teste Page Login</p>
-        </div>
-      </div>
+      {/* <DataTables /> */}
     </Container>
   );
 };

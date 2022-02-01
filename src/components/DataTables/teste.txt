@@ -2,13 +2,11 @@ import React from "react";
 import Lottie from 'react-lottie';
 import SelectInput from '../SelectInput';
 // import { Controllers } from '../ContentHeader/styles';
+import { Container, Controllers } from "./styles";
 
-import { 
-  Container,
-  Controllers
-} from "./styles";
 
-interface CarRegisterProps {
+interface DataTablesProps {
+  // HEADER
   cardColor: string;
   tagColor: string;
   titleStatus: string;
@@ -16,39 +14,40 @@ interface CarRegisterProps {
   textInput: string;
   downSet: string;
   buscarNome: string;
-  selectBuscar: string;
-  linkExportar: string;
-  img: string;
-  textInputSearch: string;
-  closeimg: string;
-  lupaimg:string;
-
-  contStatus: string;
-  textButton: string;
-  constNomeCPF: string;
-  icodown: string;
-  constCPF: string;
-  constInicio: string;
-  buttonAtivo: string;
-  buttonInativo: string;
-  textName: string;
-  numberCPF: string;
-  textData: string;
-  buttonDetalhes: string;
-  icoUp: string;
-  textButtonEnd: string;
-
-  textPage: string;
-  numberPage: string;
-  iconDown: string;
-  onlyNumber: string;
-  textDe: string;
-  imgBack: string;
-  imgGo: string;
+  // 
+//   selectBuscar: string;
+//   linkExportar: string;
+//   img: string;
+//   textInputSearch: string;
+//   closeimg: string;
+//   lupaimg:string;
+// // BODY
+//   contStatus: string;
+//   textButton: string;
+//   constNomeCPF: string;
+//   icodown: string;
+//   constCPF: string;
+//   constInicio: string;
+//   buttonAtivo: string;
+//   buttonInativo: string;
+//   textName: string;
+//   numberCPF: string;
+//   textData: string;
+//   buttonDetalhes: string;
+//   icoUp: string;
+//   textButtonEnd: string;
+// // FOOTER
+//   textPage: string;
+//   numberPage: string;
+//   iconDown: string;
+//   onlyNumber: string;
+//   textDe: string;
+//   imgBack: string;
+//   imgGo: string;
 
 }
 
-const CardRegister: React.FC<CarRegisterProps> = ({
+const DataTables: React.FC<DataTablesProps> = ({
   // HEADER
   cardColor,
   tagColor,
@@ -56,36 +55,36 @@ const CardRegister: React.FC<CarRegisterProps> = ({
   selectSegurados,
   downSet,
   buscarNome,
-  selectBuscar,
-  linkExportar,
-  img,
-  textInput,
-  textInputSearch,
-  closeimg,
-  lupaimg,
-// BODY
-  contStatus,
-  textButton,
-  constNomeCPF,
-  icodown,
-  constCPF,
-  constInicio,
-  buttonAtivo,
-  buttonInativo,
-  textName,
-  numberCPF,
-  textData,
-  buttonDetalhes,
-  icoUp,
-  textButtonEnd,
-// FOOTER
-  textPage,
-  numberPage,
-  iconDown,
-  onlyNumber,
-  textDe,
-  imgBack,
-  imgGo,
+//   selectBuscar,
+//   linkExportar,
+//   img,
+//   textInput,
+//   textInputSearch,
+//   closeimg,
+//   lupaimg,
+// // BODY
+//   contStatus,
+//   textButton,
+//   constNomeCPF,
+//   icodown,
+//   constCPF,
+//   constInicio,
+//   buttonAtivo,
+//   buttonInativo,
+//   textName,
+//   numberCPF,
+//   textData,
+//   buttonDetalhes,
+//   icoUp,
+//   textButtonEnd,
+// // FOOTER
+//   textPage,
+//   numberPage,
+//   iconDown,
+//   onlyNumber,
+//   textDe,
+//   imgBack,
+//   imgGo,
 }) => {
 
   const options = [
@@ -99,17 +98,17 @@ const CardRegister: React.FC<CarRegisterProps> = ({
     {value: 'Rodrigo', label: 'Rodrigo'}
   ]
   return (
-    <Container color= {cardColor}>
+    <Container>
       <Controllers>
-        <SelectInput options={options} />
         <SelectInput options={buscar} />
+        <SelectInput options={options} />
       </Controllers>
         {/* HEADER */}
         <div className="Card__Header">
           <div className="Card__Header__Status">
             <span>{titleStatus}</span>
             <select>{selectSegurados}</select>
-            <span>{textInput}</span>
+            {/* <span>{textInput}</span>
             <link href="#">{downSet}</link>
           </div>
           <div className="Card__Header__Search">
@@ -124,7 +123,7 @@ const CardRegister: React.FC<CarRegisterProps> = ({
             <link href="#">{img}</link>
           </div>
         </div>
-        {/* BODY */}
+        BODY
         <div className="Card__Title__Content">
             <div className="Card__Title__Content__Status">
               <span>{contStatus}</span>
@@ -151,7 +150,7 @@ const CardRegister: React.FC<CarRegisterProps> = ({
               <select>{buttonDetalhes}</select>
               <span>{textButtonEnd}</span>
             </div>
-        {/* FOOTER */}
+        FOOTER
         </div>
         <div className="Card__Footer">
           <div className="Card__Footer__Page">
@@ -165,14 +164,14 @@ const CardRegister: React.FC<CarRegisterProps> = ({
           </div>
           <div className="Card__Footer__End">
             <span>{imgBack}</span>
-            <link href="#">{imgGo}</link>
+            <link href="#">{imgGo}</link> */}
           </div>
         </div>
     </Container>
   );
 };
 
-export default CardRegister;
+export default DataTables;
 
 
 // <Button color={button} /> : quando ela de fecha sozinha ela não tem 

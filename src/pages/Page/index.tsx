@@ -6,21 +6,12 @@
 import React from "react";
 import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
-import CardRegister from '../../components/CardRegister'; 
+import DataTables from '../../components/DataTables'; 
 import { Container, Content } from "./styles";
 
 
 const Page: React.FC = () => {
-  const options = [
-    {value: 'Rodrigo', label: 'Segurados Inativos'},
-    {value: 'Maria', label: 'Maria'},
-    {value: 'Ana', label: 'Ana'}
-   ];
-  const buscar = [
-    {value: 'Rodrigo', label: 'Buscar por nome ou CPF do segurado'},
-    {value: 'Maria', label: 'Maria'},
-    {value: 'Ana', label: 'Ana'}
-   ];
+
   return (
     <Container>
       <ContentHeader title="Segurados" lineColor="#FF5148">
@@ -32,10 +23,30 @@ const Page: React.FC = () => {
 export default Page;
 
 
-// * 1- CHAMAR O COMPONENTE CONTENT HEADER : <ContentHeader></ContentHeader>
-// * 2- PASSOU PARA O *CONTENTHEADER* O TÍTULO E PODE TB A COR DA LINHA :   <ContentHeader title ="Segurados"> 
-// * 3- E NO *DASHBOARD* ESTA SENDO MANDADO COMO FILHO OUTRO MANDADO COMPONENTE QUE É O *SELEC INPUT*
-// * 4 - OU SEJA, MANDANDO UM COMPONENTE PARA OUTRO COMPONENTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ~COMMENTS
+  // * 1- CHAMAR O COMPONENTE CONTENT HEADER : <ContentHeader></ContentHeader>
+  // * 2- PASSOU PARA O *CONTENTHEADER* O TÍTULO E PODE TB A COR DA LINHA :   <ContentHeader title ="Segurados"> 
+  // * 3- E NO *DASHBOARD* ESTA SENDO MANDADO COMO FILHO OUTRO MANDADO COMPONENTE QUE É O *SELEC INPUT*
+  // * 4 - OU SEJA, MANDANDO UM COMPONENTE PARA OUTRO COMPONENTE
+
+
+// 
+
+
+
 
 /**
  * @O @MEU @DASHBOARD @É @TIPO @FC
