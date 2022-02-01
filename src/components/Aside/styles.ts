@@ -5,7 +5,7 @@ export const Container = styled.div`
 /* ÁREA QUE QUE O MENU VAI FICAR DISPONÍVEL */
   grid-area: AS;
   font-family: Work Sans;
-  background-color: ${(props) => props.theme.colors.orange};
+  background-color: ${(props) => props.theme.colors.menu};
   border-radius:0 0 16px 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   /*/ PARA QUE TODO O CONTEÚDO ANDE PARTINDO DA ESQUERDA */

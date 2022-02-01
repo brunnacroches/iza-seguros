@@ -2,11 +2,12 @@ import React from "react";
 import plus from '../../assets/lotties/add.json';
 import Lottie from 'react-lottie';
 import InputLabel from "../InputLabel";
+// import SelectInput from "../SelectInput";
 
 import { 
   Container,
   TitleContainer,
-  Controllers,
+  // Controllers,
   BottonNovoIza,
   LottiePlus
 } from "./styles";
@@ -23,13 +24,26 @@ interface IContentHeaderProps {
 const ContentHeader: React.FC<IContentHeaderProps> = ({
   title
 }) => {
-
+  // const options = [
+  //   {value: 'Rodrigo', label: 'Segurados Inativos'},
+  //   {value: 'Maria', label: 'Maria'},
+  //   {value: 'Ana', label: 'Ana'}
+  //  ];
+  // const buscar = [
+  //   {value: 'Rodrigo', label: 'Buscar por nome ou CPF do segurado'},
+  //   {value: 'Maria', label: 'Maria'},
+  //   {value: 'Ana', label: 'Ana'}
+  //  ];
   return (
     <Container>
       <TitleContainer>
         <h1>Segurados</h1>
       </TitleContainer>
-      <Controllers>
+      {/* <Controllers> */}
+      {/* <Controllers>
+        <SelectInput options={options} />
+        <SelectInput options={buscar} />
+      </Controllers> */}
         <BottonNovoIza href="#">
           Adiconar Seguradores 
         <LottiePlus href="#">
@@ -41,7 +55,7 @@ const ContentHeader: React.FC<IContentHeaderProps> = ({
           />
         </LottiePlus>
         </BottonNovoIza>
-      </Controllers>
+      {/* </Controllers> */}
     </Container>
   );
 };

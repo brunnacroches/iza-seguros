@@ -5,21 +5,22 @@ import UncontrolledLottie from './components/UncontrolledLottie';
 import ControlledLottie from './components/ControlledLottie';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
+import List from './pages/List';
 // TEMA 
-import light from './styles/themes/light';
+import orange from './styles/themes/orange';
 
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={light} >
+    <ThemeProvider theme={orange} >
       <GlobalStyles />
-      <Layout>
-      <div className="lotties">
-          <UncontrolledLottie />
-          <ControlledLottie />
-      </div>
-      <Dashboard/>
-      </Layout>
+        <Layout>
+          <div className="lotties">
+              <UncontrolledLottie />
+              <ControlledLottie />
+          </div>
+          <Dashboard/>
+        </Layout>
     </ThemeProvider>
   );
 };

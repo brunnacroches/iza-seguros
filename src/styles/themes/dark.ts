@@ -3,28 +3,36 @@
 export default {
   title: 'dark',
   colors: {
-    // cor do menu
+
+    menu: '#000000',
+    header: '#717171',
+    content: '#363740',
+
+    footer: '#680265',
+    botton: '#FF5148',
+
+    ativo: '#15CF74',
+    inativo: '#E0D3FF',
+    brow: '#ded1c0',
+
+    black: '#000000',
+    input: '#717171',
+    clear: '#F7F8FC',
+    text: '#363740',
+
     primary: '#363740',
-    // cor do header (cabeçalho)
     secondary: 'hsl(228,45%,97%)',
-    // cor do fundo
     tertiary: 'hsl(0,0%,100%)',
 
     purple: '#680265',
-    // cor do texto botao
     white: '#FFFFFF',
 
-    // cor da logo / botão
     orange: '#FF5148',
-    //cor botão ATIVO
     green: '#15CF74',
-    // cor botão Segurados
     violet: '#E0D3FF',
 
-
-    black: '#000000',
     gray: '#717171',
-    clear: '#F7F8FC',
+
 
     info: '#ded1c0',
     success: '#FF5148',

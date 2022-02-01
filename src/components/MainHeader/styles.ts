@@ -2,10 +2,10 @@
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
 
-//  ESTILIZANDO O PRIMEIRO ELEMENTO <CONTAINER> 
+// ? ESTILIZANDO O PRIMEIRO ELEMENTO <CONTAINER> 
 export const Container = styled.div`
   grid-area: MH;
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.header};
   //  FICAR UM DO LADO DO OUTRO*/
   display: flex;
   //  FICAR UM DO LADO E O OTURO DO OUTRO LADO*/
@@ -61,7 +61,7 @@ export const EmpresaClient = styled.h4`
   color: ${props => props.theme.colors.primary};
   position: relative;
   font-size: 14px;
-  left: -283px;
+  left: -280px;
   font-weight: 500;
 `;
 export const EmailCliente = styled.a`

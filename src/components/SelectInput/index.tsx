@@ -5,13 +5,6 @@ import { Container } from "./styles";
 // ! CRIANDO UMA INTERFACE QUE VAI RECEBER OS OPTIONS 
 // ! CADA OPCAO VAI TER UM VALOR QUE PODE SER UMA STRING OU TEXTO
 
-interface ISelectInpuProps {
-  options: {
-    value: string | number;
-    label: string | number;
-  }[],
-}
-
 // LABEL : É O QUE APARECE PARA O USUÁRIO
 // VALUE : É O QUE USAMOS PARA FAZER MANIPULAÇAO 
 // ? PROPRIEDADE " ONCHAGE " : É UMA PROPRIEDADE DE QUANDO A LISTA MUDAR
@@ -19,7 +12,14 @@ interface ISelectInpuProps {
 // ! OPTION.MAP => PARA PERCORRER CADA ITEM DA OPÇÃO
 // ! PARA CADA OPÇÃO COLOCA AQUI DENTRO OPTION.VALUE > OPTION.VALUE (FICANDO ASSIM DINAMICO)
 
-const SelectInput: React.FC<ISelectInpuProps> = ({ options }) => {
+interface ISelectInputProps {
+  options: {
+    value: string | number;
+    label: string | number;
+  }[],
+}
+
+const SelectInput: React.FC<ISelectInputProps> = ({ options }) => {
   return (
     <Container>
       <select>

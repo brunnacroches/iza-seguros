@@ -29,11 +29,10 @@ DENTRO DO MEU CONTAINER */
   } */
 }
 `;
-export const Controllers = styled.div`
-/* FICAR UM DO LADO DO OUTRO */
-  display: flex;
-    
-`;
+// export const Controllers = styled.div`
+// /* FICAR UM DO LADO DO OUTRO */
+//   display: flex;
+// `;
 export const BottonNovoIza = styled.a`
   background-color: ${props => props.theme.colors.orange};
   color: ${props => props.theme.colors.white};
