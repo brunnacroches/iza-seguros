@@ -1,5 +1,8 @@
 // * aqui vai ficar a estrutua e página inteligente
 
+// NO PAGES FICARÁ AS PASTAS DAS NOSSAS TELAS
+// TELA LOGIN
+
 import React from "react";
 import { Container } from "./styles";
 

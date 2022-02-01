@@ -165,7 +165,7 @@ export const DividerLine = styled.div`
   width: 290px;
   left: -28px;
   height: 0.5px;
-  background-color: ${(props) => props.theme.colors.gray};
+  background-color: ${(props) => props.theme.colors.white};
   position: relative;
   bottom: -55px;
 `;

@@ -1,51 +1,40 @@
 import React from "react";
 import plus from '../../assets/lotties/add.json';
 import Lottie from 'react-lottie';
-import InputLabel from "../InputLabel";
-// import SelectInput from "../SelectInput";
 
 import { 
   Container,
   TitleContainer,
-  // Controllers,
+  Controllers,
   BottonNovoIza,
   LottiePlus
 } from "./styles";
 
 // ? CRIANDO UMA NOVA INTERFACE PARA ATELRAR O CONTENT-HEADER
 // ? chamando o que vai ficar dinamico
-interface IContentHeaderProps {
+// ? CHILDREN : ELE JÁ VEM POR PADRAO INDEPENDENTE DO COMPONENTE 
+// ? controllers : caso queira mudar o botao ou select, ou seja um nó react
+interface ITitleContainerProps {
   title: string;
-  // ? CHILDREN : ELE JÁ VEM POR PADRAO INDEPENDENTE DO COMPONENTE 
-  // ? controllers : caso queira mudar o botao ou select, ou seja um nó react
+  lineColor: string;
+  children: React.ReactNode;
 }
 
 // ! A TIPAGEM DO CONTENT HEADER É O <IContentHeaderProps>
-const ContentHeader: React.FC<IContentHeaderProps> = ({
-  title
+const ContentHeader: React.FC<ITitleContainerProps> = ({
+  title, lineColor, children
 }) => {
-  // const options = [
-  //   {value: 'Rodrigo', label: 'Segurados Inativos'},
-  //   {value: 'Maria', label: 'Maria'},
-  //   {value: 'Ana', label: 'Ana'}
-  //  ];
-  // const buscar = [
-  //   {value: 'Rodrigo', label: 'Buscar por nome ou CPF do segurado'},
-  //   {value: 'Maria', label: 'Maria'},
-  //   {value: 'Ana', label: 'Ana'}
-  //  ];
+
   return (
     <Container>
-      <TitleContainer>
-        <h1>Segurados</h1>
+      <TitleContainer lineColor={lineColor}>
+        <h1>{title}</h1>
       </TitleContainer>
-      {/* <Controllers> */}
-      {/* <Controllers>
-        <SelectInput options={options} />
-        <SelectInput options={buscar} />
-      </Controllers> */}
+      <Controllers>
+        {children}
+      </Controllers>
         <BottonNovoIza href="#">
-          Adiconar Seguradores 
+          Adicionar Seguradores 
         <LottiePlus href="#">
         <Lottie 
             options={{
@@ -55,10 +44,20 @@ const ContentHeader: React.FC<IContentHeaderProps> = ({
           />
         </LottiePlus>
         </BottonNovoIza>
-      {/* </Controllers> */}
     </Container>
   );
 };
-
 export default ContentHeader;
 
+// ! TITULO DE VAI SER DINAMICO */}
+// ? VAI SER CRIADO TAMBÉM UMA INTERFACE PARA O NOSSO CONTENT HEADER 
+// ? PARA DIZER PARA QUEM FOR USAR O CONTENT HEADER AS PAGINAS E OS ELEMENTOS
+// ? QUAIS SAO AS PROPRIEDADES QUE ELE ESPERA
+
+// interface IContentHeaderProps {
+//   title: string;
+//   lineColor: string;
+//   controllers: React.ReactNode;
+// }
+
+//~CHILDREN JÁ VEM POR PADRÃO INDEPENDENTE DO COMPONENTE

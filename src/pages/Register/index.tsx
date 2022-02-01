@@ -1,12 +1,15 @@
+// NO PAGES FICARÁ AS PASTAS DAS NOSSAS TELAS
+// TELA SUPORTE
+
 import React from "react";
 import { Container } from "./styles";
 
-export interface SeguradosProps {}
+export interface SuporteProps {}
 
-const Segurados: React.FC = () => {
+const Register: React.FC = () => {
   return (
     <Container>
-      <div className="SeguradosIza">
+      <div className="SuporteIza">
         <div className="Teste">
           <p>Teste Page Login</p>
         </div>
@@ -15,4 +18,4 @@ const Segurados: React.FC = () => {
   );
 };
 
-export default Segurados;
+export default Register;

@@ -122,7 +122,7 @@ export default Aside;
 
 
 /**
- * @O @MEU @DASHBOARD @É @TIPO @FC
+ * @O @MEU @StatusUser @É @TIPO @FC
  * ? ==> const Dashboard:
  * * NOME DA PÁGINA
  * ? -> const Dashboard <-

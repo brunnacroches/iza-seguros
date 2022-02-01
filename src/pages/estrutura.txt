@@ -1,0 +1,52 @@
+// NO PAGES FICARÁ AS PASTAS DAS NOSSAS TELAS
+// TELA LIST
+// LISTAS SÃO AS ENTRADAS E SÁIDAS 
+// AQUI IRÁ FICAR : 
+// CADA PASTA É UMA PÁGINA
+
+
+
+//~ 1.0 PÁGINA LOGIN
+  //^FOOTER
+  //  ! ↓
+//~ 2.0 (LIST) PÁGINA SEGURADOS LISTA ( ATIVO | INATIVO )
+ //  ! ↓     
+//~ 3.0 PÁGINA FLOOTER CADASTRO
+//  ! ↓
+          // ! JANELA MODAL CASTRO REACT TYPESCRIPT
+          // ! 3.0 - (OPÇÃO 1) PÁGINA FLOOTER CADASTRO > SEGURADO ATIVO
+              //^ A1 - DESATIVAR SEGURADO
+                // ? A2 - INATIVANDO SEGURADO
+          //! 3.0 - (OPÇÃO 2) PÁGINA FLOOTER CADASTRO > SEGURADO INATIVO
+              // ^B1 - ATIVAR SEGURADO
+                // ? B2 - ATIVANDO SEGURADO
+  //~ 4.0 PÁGINA ADICIONAR SEGURADO
+      // ! ADIÇÃO CONCLUÍDA 
+  //~ 5.0 PÁGINA SUPORTE IZA
+
+
+  // NOME DAS PASTAS
+  // PASTA 1 = PÁGINA LOGIN =                               PASTA Login
+  // PASTA 2 = PÁGINA STATUS SEGURADOS = PASTA DASHBOARD =  PASTA StatusUser
+  // PASTA 3 = PÁGINA MODAL CADASTRO POP UP = PASTA LISTA = PASTA ModalEtapa
+  // PASTA 4 = PÁGINA =  ADICIONAR NOVO SEGURADO =          PASTA CadastrarUser
+  // PASTA 5 = PÁGINA =  PÁGINA SUPORTE IZA =               PASTA Suporte
+
+
+
+PARA CRIAR UM TEXTO DENTRO DO COMPONENTE
+
+CIRAR A CONSTANTE
+
+ACIMA DA CONSTANTE CRIAR UMA INFERFACE PARA O COMPONENTE 
+
+
+interface IContainerProps {
+  lineColor: string; 
+}
+
+E DEPOIS ADD <IContentHeaderProps>
+const ContentHeader: React.FC<IContentHeaderProps> = ({
+  title, lineColor, children
+}) => {
+  E DEPOIS ADD AS PROPRIEDADES ANTES DE RETORNAR

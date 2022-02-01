@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 // ! FAZENDO A COR FICAR DINAMICA 
 // ? 1- criar uma interface para o componente container 
-// interface ITitleContainerProps {
-//   lineColor: string;
-// }
-
+interface ITitleContainerProps {
+  lineColor: string;
+}
 
 export const Container = styled.div`
   width: 100%;
@@ -17,22 +16,23 @@ export const Container = styled.div`
   padding: 15px;
   `;
 
-// export const TitleContainer = styled.div<ITitleContainerProps>`
-export const TitleContainer = styled.div`
 /* ESTILIZANDO SOMENTE O H1 QUE ESTA CONTIDO 
 DENTRO DO MEU CONTAINER */
+export const TitleContainer = styled.div<ITitleContainerProps>`
 > h1 {
   color: ${props => props.theme.colors.orange};
-
-  /* &::after {
-    content: 
-  } */
-}
+   &::after {
+    content: '';
+    display: block;
+    width: 55px;
+    };
+  }
 `;
-// export const Controllers = styled.div`
-// /* FICAR UM DO LADO DO OUTRO */
-//   display: flex;
-// `;
+
+export const Controllers = styled.div`
+/* FICAR UM DO LADO DO OUTRO */
+  display: flex;
+`;
 export const BottonNovoIza = styled.a`
   background-color: ${props => props.theme.colors.orange};
   color: ${props => props.theme.colors.white};
