@@ -1,26 +1,10 @@
-
-// SOBRESCREVER TIPOS DE ARQUIVOS
-// vamos ter uma tipagem que vai estar disponível para a aplicação inteira
-
-// criando uma tipagem especial
 import 'styled-components';
-
-// criando a interface 'DefaultTheme'
+// CRINADO UMA TIPAGEM UMA INTERFACE
 declare module 'styled-components' {
   export interface DefaultTheme {
     title: string;
-
       colors: {
-        menu: string; 
-        header: string; 
-        content: string; 
 
-        textmenu: string; 
-        textcontent: string; 
-        texthearder: string; 
-
-        backfooter: string; 
-  
         primary: string;
         secondary: string;
         tertiary: string;
@@ -42,7 +26,6 @@ declare module 'styled-components' {
         clear: string;
         body1: string;
         body2: string;
-      }
+      },
     };
 }
-  

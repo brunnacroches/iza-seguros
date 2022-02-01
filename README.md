@@ -33,6 +33,8 @@ COMENTAR FUNCAO !
 - ? YARN yarn add @types/react-lottie
   \*/
 
+  yarn add @material-ui/utils
+
 # Getting Started with Create React App
 
 ### CRIAR PROJETO
@@ -47,7 +49,7 @@ COMENTAR FUNCAO !
 
 ### react router dom `npm install react-router-dom `
 
-### react router dom `npm i react-hook-form`
+### react router dom ``
 
 - para parametrizar as rotas do projeto para conseguir manipular e fazer com que o usuario transite entre uma pagina e outra.
 
