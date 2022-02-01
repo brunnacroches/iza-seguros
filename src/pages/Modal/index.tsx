@@ -4,29 +4,33 @@
 import React from "react";
 import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
-// import CardRegister from '../../components/CardRegister'; 
+import DataTables from '../../components/DataTables';
 
-import { Container } from "./styles";
+
+import { Container, Content } from "./styles";
 
 const Modal: React.FC = () => {
   const options = [
-    {value: 'Lucas', label: 'Segurados Inativos'},
-    {value: 'Lucas', label: 'Rodrigo'},
-    {value: 'Lucas', label: 'Rodrigo'},
-  ]; 
-
+    {value: 'Rodrigo', label: 'Segurados Inativos'},
+    {value: 'Rodrigo', label: 'Rodrigo'},
+    {value: 'Rodrigo', label: 'Rodrigo'}
+  ]
   const buscar = [
-    {value: 'Rodrigo', label: 'Buscar por nome ou CPF do segurado'},
-    {value: 'Maria', label: 'Maria'},
-    {value: 'Ana', label: 'Ana'}
-   ];
-   
+    {value: 'Rodrigo', label: 'Rodrigo'},
+    {value: 'Rodrigo', label: 'Rodrigo'},
+    {value: 'Rodrigo', label: 'Rodrigo'}
+  ]
   return (
     <Container>
-      <ContentHeader title="Segurados" lineColor="#FF5148">
-        <SelectInput options={options} />
-        <SelectInput options={buscar} />
-      </ContentHeader>
+      <Content>
+        <DataTables 
+        cardColor="#e6e6ea"
+        tagColor="#E44C4E"
+        title="Status"
+        subtitle="Lucas das Chagas Testa Nome Sobrenome"
+        children="336.475.018-16"
+        />
+      </Content>
     </Container>
   );
 };
@@ -56,44 +60,44 @@ export default Modal;
 
 
 //  <Content>
-//         <CardRegister 
-//             cardColor="#FFFFFF"
-//             tagColor=""
-//             titleStatus="Status do segurado"
-//             selectSegurados=""
-//             textInput="Segurados Inativos"
-//             downSet=""
-//             buscarNome="Buscar por nome ou CPF do segurado"
-//             textInputSearch="Digite nome ou CPF"
-//             lupaimg=""
-//             selectBuscar=""
-//             closeimg=""
-//             linkExportar="Exportar dados"
-//             img=""
+        // <CardRegister 
+        //     cardColor="#FFFFFF"
+        //     tagColor=""
+        //     titleStatus="Status do segurado"
+        //     selectSegurados=""
+        //     textInput="Segurados Inativos"
+        //     downSet=""
+        //     buscarNome="Buscar por nome ou CPF do segurado"
+        //     textInputSearch="Digite nome ou CPF"
+        //     lupaimg=""
+        //     selectBuscar=""
+        //     closeimg=""
+        //     linkExportar="Exportar dados"
+        //     img=""
           
-//             contStatus="Status"
-//             buttonAtivo=""
-//             buttonInativo=""
-//             textButton="Ativo"
-//             constNomeCPF="Nome"
-//             icodown=""
-//             textName="Lucas das Chagas Testa Nome Sobrenome"
-//             constCPF="CPF"
-//             numberCPF="336.475.018-16"
-//             constInicio="Início da vigência"
-//             icoUp=""
-//             textData="06/01/2022"
-//             buttonDetalhes=""
-//             textButtonEnd="VER DETALHES"
+        //     contStatus="Status"
+        //     buttonAtivo=""
+        //     buttonInativo=""
+        //     textButton="Ativo"
+        //     constNomeCPF="Nome"
+        //     icodown=""
+        //     textName="Lucas das Chagas Testa Nome Sobrenome"
+        //     constCPF="CPF"
+        //     numberCPF="336.475.018-16"
+        //     constInicio="Início da vigência"
+        //     icoUp=""
+        //     textData="06/01/2022"
+        //     buttonDetalhes=""
+        //     textButtonEnd="VER DETALHES"
           
-//             textPage="Segurados por página:"
-//             numberPage="10"
-//             iconDown=""
-//             onlyNumber="1-10 de 330"
-//             textDe="de"
-//             imgBack=""
-//             imgGo=""
-//         />
+        //     textPage="Segurados por página:"
+        //     numberPage="10"
+        //     iconDown=""
+        //     onlyNumber="1-10 de 330"
+        //     textDe="de"
+        //     imgBack=""
+        //     imgGo=""
+        // />
 //         <SelectInput options = {options} />
 //         <SelectInput options = {buscar} />
 //  </Content>
