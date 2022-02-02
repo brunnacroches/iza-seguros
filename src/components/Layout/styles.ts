@@ -7,7 +7,7 @@ export const Container = styled.div`
   grid-template-columns: 300px ;
   height: 90vh;
   /* ⤵︎ MH (MAIN HEADER ) VAI TER ALTURA DE 70PX  */
-  grid-template-rows: 70px auto;
+  grid-template-rows: 90px auto;
 
   grid-template-areas:
     'AS MH'

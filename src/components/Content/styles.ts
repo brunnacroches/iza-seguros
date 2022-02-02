@@ -5,6 +5,6 @@ export const Container = styled.div`
   color: ${(props) => props.theme.colors.warning};
   background-color: ${(props) => props.theme.colors.tertiary};
 
-  padding: 18px;
+  padding: 100px;
   padding-left: 90px;
 `;

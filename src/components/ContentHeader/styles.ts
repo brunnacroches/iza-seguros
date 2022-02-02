@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // ? 1- criar uma interface para o componente container 
 interface ITitleContainerProps {
   lineColor: string;
+  
 }
 
 export const Container = styled.div`
@@ -14,6 +15,7 @@ export const Container = styled.div`
   background-color: ${props => props.theme.colors.white};
   margin-bottom: 20px;
   padding: 15px;
+  
   `;
 
 /* ESTILIZANDO SOMENTE O H1 QUE ESTA CONTIDO 
@@ -21,7 +23,8 @@ DENTRO DO MEU CONTAINER */
 export const TitleContainer = styled.div<ITitleContainerProps>`
 cursor: pointer;
   transition: all .3s;
-
+  position: relative;
+  top: -90px;
   &:hover {
     opacity: 0.7;
     transform: translateX(10px);
@@ -31,7 +34,7 @@ cursor: pointer;
    &::after {
     content: '';
     display: block;
-    width: 55px;
+    width: auto;
     };
   }
 `;
@@ -39,6 +42,7 @@ cursor: pointer;
 export const Controllers = styled.div`
 /* FICAR UM DO LADO DO OUTRO */
   display: flex;
+  
 `;
 export const BottonNovoIza = styled.a`
   background-color: ${props => props.theme.colors.orange};
@@ -50,6 +54,7 @@ export const BottonNovoIza = styled.a`
   display: flex;
   text-align: right;
   position: relative;
+  top: -75px;
   font-size: 20px;
   line-height: 40px;
   padding: 0 12px 10px 10px;

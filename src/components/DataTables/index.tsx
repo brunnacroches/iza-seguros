@@ -35,6 +35,7 @@ const DataTables: React.FC<DataTableProps> = ({
     {value: 'Rodrigo', label: 'Rodrigo'}
   ]
   return (
+    
       <Container color={cardColor}>
         {/* <Tag color={tagColor} /> */}
         {/* <Controllers>

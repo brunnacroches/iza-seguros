@@ -18,6 +18,7 @@ export const Container = styled.div`
   font-size: 15px;
   padding-left: 10px;
   border-radius:16px;
+  width: auto;
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
 
   //  BORDA INFERIOR */
@@ -63,11 +64,13 @@ export const EmpresaClient = styled.h4`
   font-size: 14px;
   left: -280px;
   font-weight: 500;
+  width: auto;
 `;
 export const EmailCliente = styled.a`
   position: relative;
   font-size: 11px;
   left: -258px;
+  width: auto;
   color: ${props => props.theme.colors.orange};
   font-weight: 500;
   /*/ TIRAR O SUBLINHADO */
