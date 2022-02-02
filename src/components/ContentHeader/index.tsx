@@ -6,8 +6,8 @@ import {
   Container,
   TitleContainer,
   Controllers,
-  BottonNovoIza,
-  LottiePlus
+  LottiePlus,
+  BottonNovoIza
 } from "./styles";
 
 // ? CRIANDO UMA NOVA INTERFACE PARA ATELRAR O CONTENT-HEADER

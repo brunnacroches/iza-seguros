@@ -2,8 +2,20 @@ import React from "react";
 import Lottie from 'react-lottie';
 import SelectInput from '../SelectInput';
 import { Controllers } from "../ContentHeader/styles";
+import download from '../../assets/lotties/download.json';
 
-import { Container, Tag } from './styles';
+
+import { 
+  Container,
+  HeaderContainer,
+  TitleContainer,
+  ListContainer,
+  Tag,
+  TitleInput,
+  TitleSeach,
+  MenuItemLink,
+  LottieOut
+} from './styles';
 
 interface DataTableProps {
   title: string
@@ -28,17 +40,46 @@ const DataTables: React.FC<DataTableProps> = ({
     {value: 'Rodrigo', label: 'Rodrigo'}
   ]
   const buscar = [
-    {value: 'Rodrigo', label: 'Rodrigo'},
+    {value: 'Rodrigo', label: 'Digite nome ou C'},
     {value: 'Rodrigo', label: 'Rodrigo'},
     {value: 'Rodrigo', label: 'Rodrigo'}
   ]
+      
   return (
       <Container>
+        {/* SELECT INPUT */}
+        <HeaderContainer>
+          <Controllers>
+          <TitleInput>
+            <h3>Status do Segurado</h3>
+            <SelectInput options={options} />
+          </TitleInput>
+          <TitleSeach>
+            <h3>Buscar pr nome ou CPF do segurado</h3>
+            <SelectInput options={buscar} />
+          </TitleSeach>
+          </Controllers>
+          {/* MENSAGEM IZA */}         
+          <LottieOut href="#">
+          <Lottie
+              options={{
+              animationData: download,
+              loop: true,
+            }}
+          />
+        </LottieOut>
+          <MenuItemLink href="#">
+          Segurados
+        </MenuItemLink>
+
+        {/* HEADER TITULO DA LISTA */}
+        </HeaderContainer>
+        <TitleContainer>
+        <h1>{title}</h1>
+        </TitleContainer>
+        {/* CONTEÚDO DA LISTA*/}
+        <ListContainer>
         <Tag color={tagColor} />
-        {/* <Controllers>
-          <SelectInput options={options} />
-          <SelectInput options={options} />
-        </Controllers> */}
         <div>
           <span>{title}</span>
         </div>
@@ -52,6 +93,7 @@ const DataTables: React.FC<DataTableProps> = ({
           <span>{data}</span>
         </div>
         <h3>{children}</h3>
+        </ListContainer>
       </Container>
   );
 }

@@ -6,6 +6,9 @@ import Page from './pages/Page';
 import Modal from './pages/Modal';
 import Register from './pages/Register';
 
+
+import Routes from './routes';
+
 // TEMA
 import orange from './styles/themes/orange';
 

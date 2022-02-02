@@ -5,11 +5,12 @@ export const Container = styled.div`
    > select {
      padding: 7px 10px;
      border-radius: 20px;
-     background: #F0F0F0;
+     background: #e6e6ea;
      opacity: .5;
     
      /* ESPAÇAMENTO ENTRE OS INPUTS */
      margin-left: 5px;
+     position: relative;
    }
 `;
 

@@ -10,6 +10,7 @@ import DataTables from '../../components/DataTables';
 import { Container, Content } from "./styles";
 
 const Modal: React.FC = () => {
+  
   const options = [
     {value: 'Rodrigo', label: 'Segurados Inativos'},
     {value: 'Rodrigo', label: 'Rodrigo'},
