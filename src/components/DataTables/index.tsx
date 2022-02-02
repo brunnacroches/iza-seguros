@@ -3,24 +3,27 @@ import Lottie from 'react-lottie';
 import SelectInput from '../SelectInput';
 import { Controllers } from "../ContentHeader/styles";
 
-import { Container, Tag } from './styles';
+import { Container } from './styles';
 
 interface DataTableProps {
+  title: string
+  name: string;
+  cpf: string;
+  data: string;
+  children: string;
   cardColor: string;
   tagColor: string;
-  title: string;
-  subtitle: string;
-  children: string;
 }
 
 const DataTables: React.FC<DataTableProps> = ({
+  title,
+  name,
+  cpf,
+  data,
+  children,
   cardColor,
   tagColor,
-  title,
-  subtitle,
-  children
 }) => {
-
   const options = [
     {value: 'Rodrigo', label: 'Segurados Inativos'},
     {value: 'Rodrigo', label: 'Rodrigo'},
@@ -31,17 +34,24 @@ const DataTables: React.FC<DataTableProps> = ({
     {value: 'Rodrigo', label: 'Rodrigo'},
     {value: 'Rodrigo', label: 'Rodrigo'}
   ]
-
   return (
       <Container color={cardColor}>
-        <Tag color={tagColor} />
-        <Controllers>
+        {/* <Tag color={tagColor} /> */}
+        {/* <Controllers>
           <SelectInput options={options} />
           <SelectInput options={options} />
-        </Controllers>
+        </Controllers> */}
         <div>
           <span>{title}</span>
-          <span>{subtitle}</span>
+        </div>
+        <div>
+          <span>{name}</span>
+        </div>
+        <div>
+          <span>{cpf}</span>
+        </div>
+        <div>
+          <span>{data}</span>
         </div>
         <h3>{children}</h3>
       </Container>

@@ -24,11 +24,94 @@ const Modal: React.FC = () => {
     <Container>
       <Content>
         <DataTables 
-        cardColor="#e6e6ea"
-        tagColor="#E44C4E"
-        title="Status"
-        subtitle="Lucas das Chagas Testa Nome Sobrenome"
-        children="336.475.018-16"
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
+        />
+        <DataTables 
+            children=""
+            cardColor="#e6e6ea"
+            tagColor="#15CF74"
+            data="Início da Vigência"
+            name="Nome"
+            cpf="CPF"
+            title="Status"
         />
       </Content>
     </Container>

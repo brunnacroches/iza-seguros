@@ -19,6 +19,13 @@ export const Container = styled.div`
 /* ESTILIZANDO SOMENTE O H1 QUE ESTA CONTIDO 
 DENTRO DO MEU CONTAINER */
 export const TitleContainer = styled.div<ITitleContainerProps>`
+cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 > h1 {
   color: ${props => props.theme.colors.orange};
    &::after {
@@ -47,6 +54,11 @@ export const BottonNovoIza = styled.a`
   line-height: 40px;
   padding: 0 12px 10px 10px;
   flex-direction: column;
+  cursor: pointer;
+  transition: all .4s;
+  &:hover {
+    transform: translateX(10px);
+  }
    /*/ TIRAR O SUBLINHADO */
    text-decoration:none;
   /*/ TRANSICAO DA TROCA */

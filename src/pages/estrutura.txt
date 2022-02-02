@@ -1,3 +1,25 @@
+CRIANDO PALAVRA COM COR E TEXTO
+INDEX
+// interface ITitleContainerProps {
+//   title: string;
+//   lineColor: string;
+//   children: React.ReactNode;
+// }
+
+// // ! A TIPAGEM DO CONTENT HEADER É O <IContentHeaderProps>
+// const ContentHeader: React.FC<ITitleContainerProps> = ({
+//   title, lineColor, children
+// }) => {
+
+//   return (
+//     <Container>
+//       <TitleContainer lineColor={lineColor}>
+//         <h1>{title}</h1>
+// PAGES
+// <ContentHeader title="Segurados" lineColor="#FF5148"></ContentHeader>
+
+
+
 // NO PAGES FICARÁ AS PASTAS DAS NOSSAS TELAS
 // TELA LIST
 // LISTAS SÃO AS ENTRADAS E SÁIDAS 

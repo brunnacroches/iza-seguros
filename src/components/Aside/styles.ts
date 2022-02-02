@@ -10,6 +10,12 @@ export const Container = styled.div`
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   /*/ PARA QUE TODO O CONTEÚDO ANDE PARTINDO DA ESQUERDA */
   padding-left: 30px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    transform: translateX(10px);
+  }
 `;
 
 export const Header = styled.header`
@@ -49,8 +55,13 @@ export const LogoIzaIP = styled.img`
   left: 42px;
   top: 30px;
 
-  
+  cursor: pointer;
+  transition: all .3s;
 
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 
 `;
 // ! LOGO IZA => IZA
@@ -60,11 +71,14 @@ export const LogoIza = styled.img`
   position: relative;
   top: 30px;
   left: 45px;
+  cursor: pointer;
+  transition: all .3s;
 
-> svg {
-  font-size: 18px;
-  margin-right: 5px
-}
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+
 `;
 
 export const MenuContainer = styled.nav`
@@ -89,10 +103,12 @@ text-decoration:none;
 /*/ TRANSICAO DA TROCA */
 transition: opacity .3s;
 /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
-&:hover {
-  opacity: .7;
-}
-
+cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 export const LottiePeople = styled.a`
   display: flex;
@@ -102,6 +118,13 @@ export const LottiePeople = styled.a`
   position: relative;
   top: 142px;
   left: 35px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 
 export const LottieGrid = styled.a`
@@ -112,6 +135,13 @@ export const LottieGrid = styled.a`
   position: relative;
   top: 142px;
   left: 35px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 export const LottiePay = styled.a`
   display: flex;
@@ -121,6 +151,13 @@ export const LottiePay = styled.a`
   position: relative;
   top: 142px;
   left: 35px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 export const LottieDados = styled.a`
   display: flex;
@@ -130,6 +167,13 @@ export const LottieDados = styled.a`
   position: relative;
   top: 142px;
   left: 35px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 export const LottieMensagem = styled.a`
   display: flex;
@@ -139,6 +183,13 @@ export const LottieMensagem = styled.a`
   position: relative;
   top: 253px;
   left: 30px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 
 
@@ -162,9 +213,13 @@ export const MenuSuporte = styled.a`
   /*/ TRANSICAO DA TROCA */
   transition: opacity .3s;
   /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
-&:hover {
-  opacity: .7;
-}
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 
 export const DividerLine = styled.div`
@@ -174,6 +229,13 @@ export const DividerLine = styled.div`
   background-color: ${(props) => props.theme.colors.white};
   position: relative;
   bottom: -55px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 `;
 
 /**
