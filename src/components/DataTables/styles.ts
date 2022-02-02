@@ -14,7 +14,7 @@ export const Container = styled.li<IcontainerProps>`
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background-color: ${props => props.color};
   list-style: none;
-  margin: 15px 0;
+  margin: 10px 0;
   padding: 12px 15px;
   display: flex;
   /* COLOCAR UM PARA CADA LADO */
@@ -31,22 +31,23 @@ export const Container = styled.li<IcontainerProps>`
   }
 `;
 
-// export const Tag = styled.div<ItagProps>`
-//   width: 67px;
-//   height: 30px;
-//   border-radius: 15px;
-//   background-color: ${props => props.color};
-//   &:hover {
-//   opacity: 0.7;
-//   transform: translateX(10px);
-//   }
+export const Tag = styled.div<ItagProps>`
+  width: 67px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: ${props => props.color};
+  &:hover {
+  opacity: 0.7;
+  transform: translateX(10px);
+  }
 
-//   > div {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//   }
-// `;
+  > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+`;
 
 // > div spam 
 
