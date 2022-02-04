@@ -1,9 +1,8 @@
 import  Toggle  from '../Toggle';
 import Lottie from 'react-lottie';
-import React, {useMemo, useState} from 'react';
+import React, {useMemo} from 'react';
 import out from '../../assets/lotties/out.json';
 
-import { useTheme } from '../../hooks/theme';
 
 // o userMemo é um hooks decora o valor 
 import emojis from '../../utils/emojis';
@@ -21,14 +20,6 @@ import {
 
 const MainHeader: React.FC = () => {
 
-  const { toggleTheme, theme } = useTheme();
-  
-  const [orangeTheme, setOrangeTheme ] = useState(() =>theme.title === 'orange' ? true : false);
-
-  const handleChangeTheme = () => {
-    setOrangeTheme(!orangeTheme);
-    toggleTheme();
-  }
 
   const emoji = useMemo(() => {
     //  SORTEANDO OS EMOJIS COM MATH.RANDON

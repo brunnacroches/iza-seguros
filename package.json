@@ -25,11 +25,13 @@
     "@typescript-eslint/parser": "^5.10.2",
     "axios": "^0.25.0",
     "bootstrap": "5.1.3",
+    "bundle.is": "^0.0.6",
     "cors": "^2.8.5",
     "lottie-react": "^2.2.1",
     "mdbootstrap": "^4.20.0",
     "mui-datatables": "^4.0.0",
     "next": "^12.0.10",
+    "pnp-webpack-plugin": "^1.7.0",
     "react": "^16.14.0",
     "react-bootstrap": "^2.1.2",
     "react-data-table-component": "^7.4.7",
@@ -43,8 +45,11 @@
     "react-switch": "^6.0.0",
     "react-update": "^0.4.4",
     "styled-system": "^5.1.5",
+    "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -75,6 +80,11 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.21",
     "@types/styled-system": "^5.1.15",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
     "react-router": "^6.2.1",
     "styled-components": "^5.3.3"
   }
