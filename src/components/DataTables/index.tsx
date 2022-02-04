@@ -3,7 +3,7 @@ import Lottie from 'react-lottie';
 import SelectInput from '../SelectInput';
 import { Controllers } from "../ContentHeader/styles";
 import download from '../../assets/lotties/download.json';
-
+import Button from 'react-bootstrap/Button';
 
 import { 
   Container,
@@ -14,7 +14,7 @@ import {
   TitleInput,
   TitleSeach,
   MenuItemLink,
-  LottieOut
+  LottieDownload
 } from './styles';
 
 interface DataTableProps {
@@ -60,14 +60,14 @@ const DataTables: React.FC<DataTableProps> = ({
           </TitleSeach>
           </Controllers>
           {/* MENSAGEM IZA */}         
-          <LottieOut href="#">
+          <LottieDownload href="#">
           <Lottie
               options={{
               animationData: download,
               loop: true,
             }}
           />
-        </LottieOut>
+        </LottieDownload>
           <MenuItemLink href="#">
           Segurados
         </MenuItemLink>
@@ -120,7 +120,7 @@ export default DataTables;
 
 
 
-// ? MODELO DATATABLES CASO DE ESTUDO
+// // ? MODELO DATATABLES CASO DE ESTUDO
 //     const columns: GridColDef[] = [
 //       { field: 'id', headerName: 'ID', width: 70 },
 //       { field: 'firstName', headerName: 'First name', width: 130 },

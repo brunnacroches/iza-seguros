@@ -9,7 +9,7 @@ import DataTables from '../../components/DataTables';
 
 import { Container, Content } from "./styles";
 
-const Modal: React.FC = () => {
+const Crud: React.FC = () => {
   
   const options = [
     {value: 'Rodrigo', label: 'Segurados Inativos'},
@@ -37,7 +37,7 @@ const Modal: React.FC = () => {
   );
 };
 
-export default Modal;
+export default Crud;
 
 /**
  */

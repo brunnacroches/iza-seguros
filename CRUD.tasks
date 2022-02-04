@@ -1,0 +1,64 @@
+PROJETO IZA:
+	CRUD- FRONT-END: 
+  															☐ @critical
+	Parte 1:
+			✔ Criar projeto com ReactJs @done 
+			✔ Instalar Bootstrap @done 
+			✔ Instalar o Axios @done 
+			✔ Instalar React Router Dom @done 
+			✔ Configurar o projeto @done 
+			✔ Configurar o Service @done 
+			☐ Configurar as Rotas de Aplicações
+			☐ Adicionar a biblioteca Cors na API (Back-End)
+			☐ Criar Página de Tarefas
+		Parte 2:
+			☐ Criar Página de Fomulário
+			☐ Criar Método de Cadastro
+			☐ Criar Método de Edição
+		Parte 3:
+			☐ Criar Página de Visualização
+			☐ Criar Método de Visualização
+			☐ Criar Método de Finalizar Tarefas
+			☐ Criar Método de Remover Tarefa
+
+	COMANDOS:
+		Criando o Projeto:
+	 ✔ tasks_frontend --template=typescript @done
+	 ✔ react-bootstrap bootstrap@5.1.3 @done 
+	  Instalar o Bootstrap:
+	 ✔ - yarn add react-bootstrap bootstrap axios react-router-dom @done 
+		Instalar a tipagem do React Router Dom como dependencia de desenvolvimento:
+	 ✔ - yarn add @types/react-router-dom -D @done 
+
+
+	CRUD- BACK-END:
+    													
+   ☐ @high
+    ☐ @critical 
+    ☐ @low 
+    ☐ @today 
+    ☐ @high 
+    CTRL + D + ENTER = ☐ 
+    OU CTRL + ENTER = ☐ 
+    ALT + D = FEITO (DEPOIS DE ESCREVER ALGO NA LINHA) (FEITO )
+    ✔ GSRDGSS @done (2/3/2022, 11:39:11 PM)
+    ALT + C = NAO FEITO (CANCELADO )
+    ✘ SFSFSSGSD @cancelled (2/3/2022, 11:39:23 PM)
+    ✔ HFHDHDHD @done (2/3/2022, 11:37:58 PM)
+To Do Tasks Extension:
+	Project:
+		✔ @high Show commands or actions in the command pallette @done
+		☐ @medium Click on the pending symbol of a task to complete it
+		☐ @medium Ability to multi select and perform actions
+		☐ @low Separate the pending tasks from completed and cancelled tasks
+		☐ Do auto correction when the file is refreshed
+	Tasks:
+		✔ @high Make tags case-insensitive @done
+		☐ @low Due date support
+		✔ @low Add a completion date when task is completed @done (10/3/2016, 8:26:21 AM)
+	Customizations:
+		☐ @medium Ability to choose colors for tags
+	Content Assist:
+		✔ Content assist for default tags @done
+		✔ @high Trigger auto intellisense on '@' symbol @done
+		☐ @medium Content assit or code snippets for commands or actions

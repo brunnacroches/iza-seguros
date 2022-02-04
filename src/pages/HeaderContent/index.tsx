@@ -10,7 +10,7 @@ import DataTables from '../../components/DataTables';
 import { Container, Content } from "./styles";
 
 
-const Page: React.FC = () => {
+const HeaderContent: React.FC = () => {
 
   return (
     <Container>
@@ -20,7 +20,7 @@ const Page: React.FC = () => {
   );
 };
 
-export default Page;
+export default HeaderContent;
 
 
 

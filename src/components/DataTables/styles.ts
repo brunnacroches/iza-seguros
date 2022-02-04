@@ -46,7 +46,7 @@ position: relative;
   color: ${(props) => props.theme.colors.black};
 `;
 {/* SELECT INPUT */}
-export const LottieOut = styled.a`
+export const LottieDownload = styled.a`
   display: flex;
   align-items: center;
   height: 40px;

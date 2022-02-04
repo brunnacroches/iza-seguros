@@ -1,16 +1,40 @@
 import React from "react";
+import { 
+  BrowserRouter,
+  Routes,
+  Route 
+} from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './styles/GlobalStyles';
+import Layout from './components/Layout';
+import HeaderContent from './pages/HeaderContent';
+import Crud from './pages/Crud';
+import Login from './pages/Login'
+
+// import Routes from './routes/routes';
+
+// TEMA
+import orange from './styles/themes/orange';
+import App from "./App";
 import ReactDOM from "react-dom";
 
-import {ThemeProvider} from './hooks/theme';
-
-import App from "./App";
-
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider>
-        <App />
+  <BrowserRouter>
+    <ThemeProvider theme={orange}>
+      <GlobalStyles />
+          <Layout>
+            <Routes>
+              <Route path='/' element={<App />} />
+              <Route path='/' element={<Login />} />
+              <Route path='HeaderContent' element={<HeaderContent />} />
+                <Route path=":teamHeaderContent" element={<HeaderContent />} />
+                <Route path="Crud" element={<Crud />} />
+            </Routes>
+          </Layout>
     </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </BrowserRouter>
+  ,document.getElementById("root")
 );
+
+
 
