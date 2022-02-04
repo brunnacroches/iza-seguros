@@ -2,7 +2,7 @@ import  Toggle  from '../Toggle';
 import Lottie from 'react-lottie';
 import React, {useMemo} from 'react';
 import out from '../../assets/lotties/out.json';
-
+import { Outlet } from 'react-router';
 
 // o userMemo é um hooks decora o valor 
 import emojis from '../../utils/emojis';
@@ -52,6 +52,7 @@ const MainHeader: React.FC = () => {
                 />
           </LottiOut>
           <LinkSair href="#">Sair</LinkSair>
+          <Outlet />
       </UserLogado>
     </Container>
   );

@@ -3,7 +3,6 @@ import Lottie from 'react-lottie';
 import SelectInput from '../SelectInput';
 import { Controllers } from "../ContentHeader/styles";
 import download from '../../assets/lotties/download.json';
-import Button from 'react-bootstrap/Button';
 
 import { 
   Container,

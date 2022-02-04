@@ -1,4 +1,3 @@
-import { Divider } from "@mui/material";
 import React from "react";
 import Lottie from 'react-lottie';
 import bank from '../../assets/lotties/bank.json';
@@ -6,7 +5,7 @@ import cadastro from '../../assets/lotties/cadastro.json';
 import grid from '../../assets/lotties/grid.json';
 import message from '../../assets/lotties/message.json';
 import people from '../../assets/lotties/people.json';
-
+import { Outlet } from 'react-router';
 import LogoIzaI from '../../assets/svg/logo-iza-i-info.svg';
 import LogoIzaPonto from '../../assets/svg/logo-iza-ponto-info.svg';
 import LogoIzaZa from '../../assets/svg/logo-iza-za-info.svg';
@@ -105,6 +104,7 @@ const Aside: React.FC = () => {
       <MenuSuporte href="#">
         Suporte
         </MenuSuporte>
+       <Outlet />
     </Container>
   );
 };

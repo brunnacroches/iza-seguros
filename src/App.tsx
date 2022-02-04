@@ -13,12 +13,13 @@ const App: React.FC = () => {
   return (
     <div>
     <ThemeProvider theme={orange}>
-  <GlobalStyles />
-      <Layout>
+      <GlobalStyles />
+       <Layout>
         <Routes>
           <Route path='HeaderContent' element={<HeaderContent />} />
             <Route path=":teamHeaderContent" element={<HeaderContent />} />
-            <Route path="Crud" element={<Crud />} />
+            <Route path='/' element={<Crud />} />
+            {/* <Route path=":teamCrud" element={<Crud />} /> */}
         </Routes>
       </Layout>
 </ThemeProvider>
