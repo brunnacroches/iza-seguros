@@ -46,7 +46,7 @@ const DataTables: React.FC<DataTableProps> = ({
       
   return (
       <Container>
-        {/* SELECT INPUT */}
+        {/* SELECT INgetePUT */}
         <HeaderContainer>
           <Controllers>
           <TitleInput>
