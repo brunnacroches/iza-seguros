@@ -4,100 +4,111 @@ import SelectInput from '../SelectInput';
 import { Controllers } from "../ContentHeader/styles";
 import download from '../../assets/lotties/download.json';
 
-import { 
-  Container,
-  HeaderContainer,
-  TitleContainer,
-  ListContainer,
-  Tag,
-  TitleInput,
-  TitleSeach,
-  MenuItemLink,
-  LottieDownload
-} from './styles';
+// começar a consumir os dados da nossa API
 
-interface DataTableProps {
-  title: string
-  name: string;
-  cpf: string;
-  data: string;
-  children: string;
-  tagColor: string;
-}
-
-const DataTables: React.FC<DataTableProps> = ({
-  title,
-  name,
-  cpf,
-  data,
-  children,
-  tagColor,
-}) => {
-  const options = [
-    {value: 'Rodrigo', label: 'Segurados Inativos'},
-    {value: 'Rodrigo', label: 'Rodrigo'},
-    {value: 'Rodrigo', label: 'Rodrigo'}
-  ]
-  const buscar = [
-    {value: 'Rodrigo', label: 'Digite nome ou C'},
-    {value: 'Rodrigo', label: 'Rodrigo'},
-    {value: 'Rodrigo', label: 'Rodrigo'}
-  ]
-      
-  return (
-      <Container>
-        {/* SELECT INPUT */}
-        <HeaderContainer>
-          <Controllers>
-          <TitleInput>
-            <h3>Status do Segurado</h3>
-            <SelectInput options={options} />
-          </TitleInput>
-          <TitleSeach>
-            <h3>Buscar pr nome ou CPF do segurado</h3>
-            <SelectInput options={buscar} />
-          </TitleSeach>
-          </Controllers>
-          {/* MENSAGEM IZA */}         
-          <LottieDownload href="#">
-          <Lottie
-              options={{
-              animationData: download,
-              loop: true,
-            }}
-          />
-        </LottieDownload>
-          <MenuItemLink href="#">
-          Segurados
-        </MenuItemLink>
-
-        {/* HEADER TITULO DA LISTA */}
-        </HeaderContainer>
-        <TitleContainer>
-        <h1>{title}</h1>
-        </TitleContainer>
-        {/* CONTEÚDO DA LISTA*/}
-        <ListContainer>
-        <Tag color={tagColor} />
-        <div>
-          <span>{title}</span>
-        </div>
-        <div>
-          <span>{name}</span>
-        </div>
-        <div>
-          <span>{cpf}</span>
-        </div>
-        <div>
-          <span>{data}</span>
-        </div>
-        <h3>{children}</h3>
-        </ListContainer>
-      </Container>
+const DataTables: React.FC = () => {
+  return(
+    <div className="container">
+      <h1>Data Tables Page</h1>
+    </div>
   );
 }
-
 export default DataTables;
+
+// import { 
+//   Container,
+//   TopContainer,
+//   TitleContainer,
+//   gListContainer,
+//   Tag,,
+//   TitleInput,
+//   TitleSeach,
+//   MenuItemLink,
+//   LottieDownload
+// } from './styles';
+
+// interface DataTableProps {
+//   title: string
+//   name: string;
+//   cpf: string;
+//   data: string;
+//   children: string;
+//   tagColor: string;
+// }
+
+// const DataTables: React.FC<DataTableProps> = ({
+//   title,
+//   name,
+//   cpf,
+//   data,
+//   children,
+//   tagColor,
+// }) => {
+//   const options = [
+//     {value: 'Rodrigo', label: 'Segurados Inativos'},
+//     {value: 'Rodrigo', label: 'Rodrigo'},
+//     {value: 'Rodrigo', label: 'Rodrigo'}
+//   ]
+//   const buscar = [
+//     {value: 'Rodrigo', label: 'Digite nome ou C'},
+//     {value: 'Rodrigo', label: 'Rodrigo'},
+//     {value: 'Rodrigo', label: 'Rodrigo'}
+//   ]
+      
+//   return (
+//       <Container>
+//         {/* SELECT INPUT */}
+//         <TopContainer>
+//           <Controllers>
+//           <TitleInput>
+//             <h3>Status do Segurado</h3>
+//             <SelectInput options={options} />
+//           </TitleInput>
+//           <TitleSeach>
+//             <h3>Buscar pr nome ou CPF do segurado</h3>
+//             <SelectInput options={buscar} />
+//           </TitleSeach>
+//           </Controllers>
+//           {/* MENSAGEM IZA */}         
+//           <LottieDownload href="#">
+//           <Lottie
+//               options={{
+//               animationData: download,
+//               loop: true,
+//             }}
+//           />
+//         </LottieDownload>
+//           <MenuItemLink href="#">
+//           Segurados
+//         </MenuItemLink>
+
+//         {/* HEADER TITULO DA LISTA */}
+//         </TopContainer>
+//         <TitleContainer>
+//         <h1>{title}</h1>
+//         </TitleContainer>
+//         {/* CONTEÚDO DA LISTA*/}
+//         <ListContainer>
+//         <Tag color={tagColor} />
+//         <div>
+//           <span>{title}</span>
+//         </div>
+//         <div>
+//           <span>{name}</span>
+//         </div>
+//         <div>
+//           <span>{cpf}</span>
+//         </div>
+//         <div>
+//           <span>{data}</span>
+//         </div>
+//         <h3>{children}</h3>
+//         </ListContainer>
+//       </Container>
+//   );
+// }
+
+// export default DataTables;
 
 
 

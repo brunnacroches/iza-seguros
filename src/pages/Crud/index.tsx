@@ -25,12 +25,12 @@ const Crud: React.FC = () => {
     <Container>
       <Content>
         <DataTables 
-            children=""
-            tagColor="#15CF74"
-            data="Início da Vigência"
-            name="Nome"
-            cpf="CPF"
-            title="Status"
+            // children=""
+            // tagColor="#15CF74"
+            // data="Início da Vigência"
+            // name="Nome"
+            // cpf="CPF"
+            // title="Status"
         />
       </Content>
     </Container>
