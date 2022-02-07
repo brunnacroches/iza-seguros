@@ -29,6 +29,7 @@ PROJETO IZA:
 	 ✔ - yarn add react-bootstrap bootstrap axios react-router-dom @done 
 		Instalar a tipagem do React Router Dom como dependencia de desenvolvimento:
 	 ✔ - yarn add @types/react-router-dom -D @done 
+	 ✔ yarn add moment @done (2/7/2022, 2:55:04 AM)
 
 
 	CRUD- BACK-END:
