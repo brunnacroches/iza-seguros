@@ -4,7 +4,7 @@
 import React from "react";
 import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
-import DataTables from '../../components/DataTables';
+import Tasks from '../../components/Tasks';
 
 
 import { Container, Content } from "./styles";
@@ -24,7 +24,7 @@ const Crud: React.FC = () => {
   return (
     <Container>
       <Content>
-        <DataTables 
+        <Tasks 
             // children=""
             // tagColor="#15CF74"
             // data="Início da Vigência"

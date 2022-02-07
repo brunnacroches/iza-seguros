@@ -1,33 +1,48 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyles from './styles/GlobalStyles';
-import { Routes, Route } from "react-router-dom";
-import Layout from './components/Layout';
-import HeaderContent from './pages/HeaderContent';
-import Crud from './pages/Crud';
+// import { ThemeProvider } from 'styled-components';
+// import GlobalStyles from './styles/GlobalStyles';
+// import { Routes, Route } from "react-router-dom";
+// import Layout from './components/Layout';
+// import HeaderContent from './pages/HeaderContent';
+// import Crud from './pages/Crud';
 
 // TEMA
 import orange from './styles/themes/orange';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <div>
-    <ThemeProvider theme={orange}>
-      <GlobalStyles />
-       <Layout>
-        <Routes>
-          <Route path='HeaderContent' element={<HeaderContent />} />
-            <Route path=":teamHeaderContent" element={<HeaderContent />} />
-            <Route path='/' element={<Crud />} />
-            {/* <Route path=":teamCrud" element={<Crud />} /> */}
-        </Routes>
-      </Layout>
-</ThemeProvider>
+    <div className='App'>
+      <h1>Seguro Iza</h1>
     </div>
   );
 }
 
 export default App;
+
+// const App: React.FC = () => {
+//   return (
+//     <div>
+//     <ThemeProvider theme={orange}>
+//       <GlobalStyles />
+//        <Layout>
+//         <Routes>
+//           <Route path='HeaderContent' element={<HeaderContent />} />
+//             <Route path="/HeaderContent" element={<HeaderContent />} />
+//             <Route path='/' element={<Crud />} />
+//         </Routes>
+//       </Layout>
+// </ThemeProvider>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
 
 // eslint-disable-next-line no-lone-blocks
 {/* <HeaderContent />

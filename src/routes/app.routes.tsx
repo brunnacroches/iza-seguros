@@ -6,17 +6,31 @@ import HeaderContent from "../pages/HeaderContent";
 
 
 
-const AppRoutes: React.FC = () => (
-  <Layout>
-    <Routes>
-       {/* <Route path='/' element={<App />} /> */}
-        <Route path='HeaderContent' element={<HeaderContent />} />
-           <Route path=":teamHeaderContent" element={<HeaderContent />} />
-           <Route path="Crud" element={<Crud />} />
-    </Routes>
-  </Layout>
+const AppRoutes: React.FC = () => {
+  return (
+      <Layout>
+        <Routes>
+          {/* <Route path='/' element={<App />} /> */}
+            <Route path='HeaderContent' element={<HeaderContent />} />
+              <Route path=":teamHeaderContent" element={<HeaderContent />} />
+              <Route path="Crud" element={<Crud />} />
+        </Routes>
+      </Layout>
 );
-export default AppRoutes;
+}
+
+
+// const AppRoutes: React.FC = () => (
+//   <Layout>
+//     <Routes>
+//        {/* <Route path='/' element={<App />} /> */}
+//         <Route path='HeaderContent' element={<HeaderContent />} />
+//            <Route path=":teamHeaderContent" element={<HeaderContent />} />
+//            <Route path="Crud" element={<Crud />} />
+//     </Routes>
+//   </Layout>
+// );
+// export default AppRoutes;
 
 // DUAS ROTAS PARA E PASSANDO OS TIPOS
 // REAPROVEITAR AS TELAS

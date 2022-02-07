@@ -74,10 +74,10 @@ export const BottonNovoIza = styled.a`
 export const LottiePlus = styled.a`
   display: flex;
   align-items: center;  
-  height: 35px;
+  height: 30px;
   width: auto;
   position: relative;
-  top: -35px;
+  top: -40px;
   left: -105px;
   /*/ TIRAR O SUBLINHADO */
   text-decoration:none;

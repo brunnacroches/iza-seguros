@@ -24,7 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "axios": "^0.25.0",
-    "bootstrap": "5.1.3",
+    "bootstrap": "^5.1.3",
     "bundle.is": "^0.0.6",
     "cors": "^2.8.5",
     "lottie-react": "^2.2.1",
