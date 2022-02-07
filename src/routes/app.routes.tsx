@@ -1,24 +1,25 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "../components/Layout";
-import Crud from "../pages/Crud";
-import HeaderContent from "../pages/HeaderContent";
+import Home from '../pages/Home';
+import Tasks from '../pages/Tasks';
+
+
+// import Layout from "../components/Layout";
+// import Crud from "../pages/Crud";
+// import HeaderContent from "../pages/HeaderContent";
 
 
 
 const AppRoutes: React.FC = () => {
   return (
-      <Layout>
         <Routes>
-          {/* <Route path='/' element={<App />} /> */}
-            <Route path='HeaderContent' element={<HeaderContent />} />
-              <Route path=":teamHeaderContent" element={<HeaderContent />} />
-              <Route path="Crud" element={<Crud />} />
+            <Route path='/' element={<Home /> } />
+            <Route path='/tarefas' element={<Tasks /> } />
         </Routes>
-      </Layout>
-);
+  );
 }
 
+export default AppRoutes;
 
 // const AppRoutes: React.FC = () => (
 //   <Layout>

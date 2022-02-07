@@ -1,4 +1,8 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import AppRoutes from './routes/app.routes';
+import Header from './components/Header';
 // import { ThemeProvider } from 'styled-components';
 // import GlobalStyles from './styles/GlobalStyles';
 // import { Routes, Route } from "react-router-dom";
@@ -7,13 +11,14 @@ import React from 'react';
 // import Crud from './pages/Crud';
 
 // TEMA
-import orange from './styles/themes/orange';
+// import orange from './styles/themes/orange';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Seguro Iza</h1>
-    </div>
+    <BrowserRouter>
+        <Header />
+        <AppRoutes />
+    </BrowserRouter>
   );
 }
 
