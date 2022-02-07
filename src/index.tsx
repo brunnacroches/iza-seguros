@@ -1,19 +1,28 @@
 import React from "react";
-import { BrowserRouter } from 'react-router-dom';
-
-
-// import Routes from './routes/routes';
-
+import ReactDOM from "react-dom";
+import  'bootstrap/dist/css/bootstrap.min.css' ;
 // TEMA
 import App from "./App";
-import ReactDOM from "react-dom";
+
+// import { BrowserRouter } from 'react-router-dom';
+// import Routes from './routes/routes';
+
 
 ReactDOM.render(
-  <BrowserRouter>
+  <React.StrictMode>
     <App />
-  </BrowserRouter>,
+  </React.StrictMode>,
   document.getElementById("root")
 );
+
+
+// ReactDOM.render(
+//   <BrowserRouter>
+//     <App />
+      
+//   </BrowserRouter>,
+//   document.getElementById("root")
+// );
 
 
 
