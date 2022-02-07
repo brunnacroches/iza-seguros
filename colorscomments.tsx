@@ -35,3 +35,16 @@ TODO AMARELO
 /* 
 * VERDE
 */
+
+  // ? ⇩⇩⇩ NOTE ⇩⇩⇩
+  // ! ⇩⇩⇩ NOTE ⇩⇩⇩
+  // ~ ⇩⇩⇩ NOTE ⇩⇩⇩
+  // ^ ⇩⇩⇩ NOTE ⇩⇩⇩
+  // * ⇩⇩⇩ NOTE ⇩⇩⇩
+  // ? ⇩⇩⇩ NOTE ⇩⇩⇩
+  /* 
+  & ⇩⇩⇩ NOTE ⇩⇩⇩
+  */    
+  /*
+   TODO ⇩⇩⇩ NOTE ⇩⇩⇩
+*/
