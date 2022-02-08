@@ -11,7 +11,7 @@ import LogoIzaPonto from '../../assets/svg/logo-iza-ponto-info.svg';
 import LogoIzaZa from '../../assets/svg/logo-iza-za-info.svg';
 
 import {
-  Container,
+  ContainerAside,
   Header,
   LogoIzaP,
   LogoIzaIP,
@@ -31,7 +31,7 @@ import {
 
 const Aside: React.FC = () => {
   return (
-    <Container>
+    <ContainerAside>
       <Header>
         <LogoIzaP src={LogoIzaPonto} alt=""/>
         <LogoIzaIP src={LogoIzaI} alt="" />
@@ -104,8 +104,7 @@ const Aside: React.FC = () => {
       <MenuSuporte href="#">
         Suporte
         </MenuSuporte>
-       <Outlet />
-    </Container>
+    </ContainerAside>
   );
 };
 

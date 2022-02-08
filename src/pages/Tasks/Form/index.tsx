@@ -3,7 +3,7 @@
 import React, {useState, useEffect, ChangeEvent} from 'react';
 import { Button, Form  } from 'react-bootstrap';
 import api from "../../../services/api";
-import { Container, ButtonNew  } from "./styles";
+import { ContainerTasks, ButtonNew  } from "./styles";
 import { useNavigate, useParams} from 'react-router-dom';
 
 // import  "./styles.ts";
@@ -81,7 +81,7 @@ const Tasks: React.FC = () => {
   }
   
   return (
-    <Container>
+    <ContainerTasks>
         <div className='container'>
           <br />
           <ButtonNew>
@@ -119,7 +119,7 @@ const Tasks: React.FC = () => {
             </Form>
           </div>
         </div>
-    </Container>
+    </ContainerTasks>
   );
 };
 export default Tasks;

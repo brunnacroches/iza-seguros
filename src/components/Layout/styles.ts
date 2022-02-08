@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerLayout = styled.div`
   /* ⤵︎ UM GRID É CONSTITUÍDO DE COLUNAS E LINHAS  */
   display: grid;
   /* ⤵︎  A PRIMEIRA COLUNA VAI TER 250PX E O RESTANTE O TANTO QUE ESTIVER DISPONÍVEL  (AUTO) */

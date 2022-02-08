@@ -5,7 +5,7 @@ import { Badge, Button, Card } from 'react-bootstrap';
 import api from "../../../services/api";
 import { useNavigate, useParams} from 'react-router-dom';
 import { 
-  Container, 
+  ContainerTasks, 
   ButtonBack  
 } from "./styles";
 import moment from 'moment';
@@ -47,7 +47,7 @@ const Detail: React.FC = () => {
   }
   
   return (
-    <Container>
+    <ContainerTasks>
         <div className='container'>
           <br />
           <ButtonBack>
@@ -82,7 +82,7 @@ const Detail: React.FC = () => {
             </Card.Body>
           </Card>
         </div>
-    </Container>
+    </ContainerTasks>
   );
 };
 export default Detail;

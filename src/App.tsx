@@ -16,7 +16,7 @@ import orange from './styles/themes/orange';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+        <Header />
         <ThemeProvider theme={orange}>
           <GlobalStyles />
             <AppRoutes />

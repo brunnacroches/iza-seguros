@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 import Login from '../pages/Login';
 // import Layout from "../components/Layout";
 // import Crud from "../pages/Crud";
-// import HeaderContent from "../pages/HeaderContent";
+import HeaderContent from "../pages/HeaderContent";
 
 
 
@@ -17,10 +17,12 @@ const AppRoutes: React.FC = () => {
         <Routes>
             <Route path='/' element={<Home /> } />
                 <Route path='/login' element={<Login /> } />
-                <Route path='/tarefas' element={<Tasks /> } />
-                <Route path='/tarefas_cadastro' element={<TasksForm /> } />
-                <Route path='/tarefas_cadastro/:id' element={<TasksForm /> } />
-                <Route path='/tarefas/:id' element={<TasksDetail /> } />
+                <Route element={<Layout />} >
+                    <Route path='/tarefas' element={<Tasks /> } />
+                    <Route path='/tarefas_cadastro' element={<TasksForm /> } />
+                    <Route path='/tarefas_cadastro/:id' element={<TasksForm /> } />
+                    <Route path='/tarefas/:id' element={<TasksDetail /> } />
+                </Route>
         </Routes>
   );
 }

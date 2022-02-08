@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react';
 import { Badge, Button, Table } from 'react-bootstrap';
 import api from "../../services/api";
 import moment from 'moment'; 
-import { Container, ButtonNews  } from "./styles";
+import { ContainerTasks, ButtonNews  } from "./styles";
 import { useNavigate,} from 'react-router-dom';
 
 // useNavigate = useHistory
@@ -74,7 +74,7 @@ const Tasks: React.FC = () => {
       navigate(`/tarefas/${id}`)
     }
   return (
-    <Container>
+    <ContainerTasks>
         <div className='container'>
           <br />
           <ButtonNews>
@@ -130,7 +130,7 @@ const Tasks: React.FC = () => {
                 </tbody>
           </Table>
         </div>
-    </Container>
+    </ContainerTasks>
   );
 };
 export default Tasks;

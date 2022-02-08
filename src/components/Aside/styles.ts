@@ -1,7 +1,7 @@
 import { borderRight, fontSize } from '@mui/system';
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerAside = styled.div`
 /* ÁREA QUE QUE O MENU VAI FICAR DISPONÍVEL */
   grid-area: AS;
   font-family: Work Sans;
