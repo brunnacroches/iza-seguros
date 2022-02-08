@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 
 // !HEADER => 
-export const HeaderLogo = styled.img`
-height: 48px;
+export const HeaderLogo = styled.div`
+  height: 48px;
   width: 20px;
   position: relative;
   left: -10px;

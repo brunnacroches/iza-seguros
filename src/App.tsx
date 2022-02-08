@@ -3,21 +3,24 @@ import { BrowserRouter } from 'react-router-dom';
 
 import AppRoutes from './routes/app.routes';
 import Header from './components/Header';
-// import { ThemeProvider } from 'styled-components';
-// import GlobalStyles from './styles/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './styles/GlobalStyles';
 // import { Routes, Route } from "react-router-dom";
-// import Layout from './components/Layout';
-// import HeaderContent from './pages/HeaderContent';
-// import Crud from './pages/Crud';
+import Layout from './components/Layout';
+import HeaderContent from './pages/HeaderContent';
+import Crud from './pages/Crud';
 
 // TEMA
-// import orange from './styles/themes/orange';
+import orange from './styles/themes/orange';
 
 function App() {
   return (
     <BrowserRouter>
-        <Header />
-        <AppRoutes />
+      <Header />
+        <ThemeProvider theme={orange}>
+          <GlobalStyles />
+            <AppRoutes />
+        </ThemeProvider>
     </BrowserRouter>
   );
 }

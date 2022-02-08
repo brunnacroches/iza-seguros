@@ -20,7 +20,7 @@ import {
 const Header: React.FC = () => {
   return (
     <>
-  <Navbar bg="dark" variant="dark">
+  <Navbar style={{ color: "white", background: "#FFFF" }}>
     <Container>
     <Navbar.Brand href="#home"> 
         {/* <HeaderLogo> */}
@@ -31,9 +31,9 @@ const Header: React.FC = () => {
     </Navbar.Brand>
     <Nav className="me-auto">
       <Nav.Link as={Link} className="nav-link" to="/">Início</Nav.Link>
+      <Nav.Link as={Link} className="nav-link" to="/login">Login</Nav.Link>
       <Nav.Link as={Link} className="nav-link" to="/tarefas">Crud</Nav.Link>
       <Nav.Link as={Link} className="nav-link" to="/">Termos</Nav.Link>
-      <Nav.Link as={Link} className="nav-link" to="/">Login</Nav.Link>
       <Nav.Link as={Link} className="nav-link" to="/">Fazer cotação</Nav.Link>
     </Nav>
     </Container>
