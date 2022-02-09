@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import  'bootstrap/dist/css/bootstrap.min.css' ;
+import 'react-responsive-modal/styles.css';
+
 // TEMA
 import App from "./App";
 

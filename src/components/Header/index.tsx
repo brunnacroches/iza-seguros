@@ -34,7 +34,7 @@ const Header: React.FC = () => {
       <Nav.Link as={Link} className="nav-link" to="/login">Login</Nav.Link>
       <Nav.Link as={Link} className="nav-link" to="/tarefas">Crud</Nav.Link>
       <Nav.Link as={Link} className="nav-link" to="/">Termos</Nav.Link>
-      <Nav.Link as={Link} className="nav-link" to="/">Fazer cotação</Nav.Link>
+      <Nav.Link as={Link} className="nav-link" to="/modal">Modal</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

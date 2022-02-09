@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from 'react-lottie';
-import { Container } from "./styles";
+import { ContainerSelect } from "./styles";
 
 //~ COMENTÁRIOS
     // ! CRIANDO UMA INTERFACE QUE VAI RECEBER OS OPTIONS 
@@ -21,7 +21,7 @@ interface ISelectInputProps {
 
 const SelectInput: React.FC<ISelectInputProps> = ({ options }) => {
   return (
-    <Container>
+    <ContainerSelect>
       <select>
         {
         options.map(option => (
@@ -29,7 +29,7 @@ const SelectInput: React.FC<ISelectInputProps> = ({ options }) => {
         ))
         }
       </select>
-    </Container>
+    </ContainerSelect>
   );
 };
 

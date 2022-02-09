@@ -3,7 +3,7 @@ import React, {useMemo} from 'react';
 import styled from 'styled-components';
 
 // ? ESTILIZANDO O PRIMEIRO ELEMENTO <CONTAINER> 
-export const Container = styled.div`
+export const ContainerMainReader = styled.div`
   grid-area: MH;
   background-color: ${props => props.theme.colors.header};
   //  FICAR UM DO LADO DO OUTRO*/
@@ -62,15 +62,17 @@ export const EmpresaClient = styled.h4`
   color: ${props => props.theme.colors.primary};
   position: relative;
   font-size: 14px;
-  left: -280px;
+  left: 200px;
   font-weight: 500;
   width: auto;
+  top: -32px;
 `;
 export const EmailCliente = styled.a`
   position: relative;
   font-size: 11px;
-  left: -258px;
+  left: 223px;
   width: auto;
+  top: -43px;
   color: ${props => props.theme.colors.orange};
   font-weight: 500;
   /*/ TIRAR O SUBLINHADO */
@@ -81,8 +83,8 @@ export const EmailCliente = styled.a`
 `;
 export const LinkSair = styled.a`
   color: ${props => props.theme.colors.primary};
-  top: -65px;
-  left: -29px;
+  top: -99px;
+  left: 438px;
   display: flex;
   position: relative;
   font-size: 14px;
@@ -104,8 +106,8 @@ export const LottiOut = styled.a`
   height: 40px;
   width: 25px;
   position: relative;
-  top: -33px;
-  left: 0px;
+  top: -68px;
+  left: 470px;
   /*/ TIRAR O SUBLINHADO */
   text-decoration:none;
   /*/ TRANSICAO DA TROCA */
@@ -113,6 +115,25 @@ export const LottiOut = styled.a`
   /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
 `;
 
+export const CircleUser = styled.div`
+  display: flex;
+  align-items: center;  
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 125px;
+  border-radius: 50%;
+  background-color: red;
+
+p {
+  font-size: 15px;
+  align-items: center;
+  right: -5px;
+  top: 10px;
+  color:white;
+  position: relative;
+}
+`;
 
 
 

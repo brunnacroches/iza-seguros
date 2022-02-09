@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerContent = styled.div`
   grid-area: CT;
   color: ${(props) => props.theme.colors.warning};
   background-color: ${(props) => props.theme.colors.tertiary};
 
-  padding: 100px;
-  padding-left: 90px;
+  /* padding: 50px;
+  padding-left: 50px; */
 
   height: cal(100vh - 70px);
   overflow-y: scroll;

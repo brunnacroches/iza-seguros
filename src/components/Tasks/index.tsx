@@ -2,14 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Table } from "react-bootstrap";
 import api from "../../services/api"
 
-// import SelectInput from '../SelectInput';
-// import {Button} from "react-bootstrap";
-// import { LottieDownload } from "./styles";
-// import { withTheme } from "styled-components";
-// import download from '../../assets/lotties/download.json';
-// import add from '../../assets/lotties/add.json';
-// import Lottie from 'react-lottie';
-
 
 // começar a consumir os dados da  API
 const Tasks: React.FC = () => {

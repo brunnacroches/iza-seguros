@@ -57,7 +57,6 @@ const Detail: React.FC = () => {
             </div>
           </ButtonBack>
           <br />
-
           <Card style={{ width: '18rem' }}>
             <Card.Body>
               <Card.Title>{ task?.title }</Card.Title>

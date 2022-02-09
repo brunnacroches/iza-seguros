@@ -3,8 +3,18 @@
 import React, {useState, useEffect} from 'react';
 import { Badge, Button, Table } from 'react-bootstrap';
 import api from "../../services/api";
+import { Modal } from 'react-responsive-modal';
 import moment from 'moment'; 
-import { ContainerTasks, ButtonNews  } from "./styles";
+import { 
+  ContainerTasks, 
+  ButtonNews,
+  TitleTask,
+  ModalIza,
+  ModalHeader,
+  ModalCadastro,
+  BadgePosition
+
+} from "./styles";
 import { useNavigate,} from 'react-router-dom';
 
 // useNavigate = useHistory
@@ -73,15 +83,22 @@ const Tasks: React.FC = () => {
     function viewTask(id: number) {
       navigate(`/tarefas/${id}`)
     }
+
+    //~MODAL
+
+    const [open, setOpen] = useState(false);
+    const onOpenModal = () => setOpen(true);
+    const onCloseModal = () => setOpen(false);
+
   return (
     <ContainerTasks>
         <div className='container'>
           <br />
           <ButtonNews>
-            <div className='task-header'>
-              <h1>Tasks Page</h1>
-              <Button variant="dark" onClick={newTask}>Nova Tarefa</Button>
-            </div>
+              <TitleTask>
+                  <h1>Segurados</h1>
+              </TitleTask>
+              <Button variant="light" style={{ color: "white", background: "#FF5148" }}  onClick={newTask}>Adicionar Novos Segurados</Button>
           </ButtonNews>
           <br />
           <Table striped bordered hover className='text-center'>
@@ -106,25 +123,70 @@ const Tasks: React.FC = () => {
                   {/* //~retornando a seguinte estrutura ... */}
                     {
                       tasks.map(task => (
-                        <tr key={task.id}>
+                        <><tr key={task.id}>
                           <td>
-                          {/* //^na primeira coluna que é o Status  */}
-                          <Badge pill bg={ task.finished ? "success" : "warning" }>
-                              { task.finished ? "ATIVO" : "INATIVO" }
-                          </Badge>
+                            {/* //^na primeira coluna que é o Status  */}
+                            <Badge pill bg={task.finished ? "success" : "danger"}>
+                              {task.finished ? "ATIVO" : "INATIVO"}
+                            </Badge>
                           </td>
-                          <td>{ task.title }</td>
-                          <td>{ task.cpf }</td>
-                          <td>{ formateDate(task.updated_at) }</td>
-                          <td>{ task.details }</td>
-                          <td><Button size="sm" variant="Light" style={{ color: "white", background: "#680265" }}  >VER DETALHES</Button>{' '}</td>
+                          <td>{task.title}</td>
+                          <td>{task.cpf}</td>
+                          <td>{formateDate(task.updated_at)}</td>
+                          <td><Button size="sm" variant='Light'
+                            style={{
+                              color: "white",
+                              background: "#680265",
+                            }} onClick={onOpenModal}>VER DETALHES </Button> {' '}</td>
+
                           <td>
-                            <Button size="sm" disabled={task.finished} onClick={() => editTask(task.id)}>Editar</Button> { ' ' }
-                            <Button size="sm" disabled={task.finished} variant='warning' onClick={() => finishedTask(task.id)}>Finalizar</Button> { ' ' }
-                            <Button size="sm" variant='info' onClick={() => viewTask(task.id)} >Vizualizar </Button> { ' ' }
-                            <Button size="sm"variant='danger'onClick={() => deleteTask(task.id)}>Remover</Button> { ' ' }
+                            <Button size="sm" disabled={task.finished} onClick={() => editTask(task.id)}>Editar</Button> {' '}
+                            <Button size="sm" disabled={task.finished} variant='warning' onClick={() => finishedTask(task.id)}>Finalizar</Button> {' '}
+                            <Button size="sm" variant='danger' onClick={() => deleteTask(task.id)}>Remover</Button> {' '}
                           </td>
-                        </tr>
+                        </tr><ModalIza>
+                            <Modal open={open} onClose={onCloseModal} center>
+                              <ModalHeader>
+                              <BadgePosition>
+                                <Badge pill bg={task.finished ? "success" : "danger"}>
+                                  {task.finished ? "SEGURADO ATIVO" : "SEGURADO INATIVO"}
+                                </Badge>
+                              </BadgePosition>
+                                <h2>Lucas das Chagas Testa Nome Nome</h2>
+                              </ModalHeader>
+                              <ModalCadastro>
+                                <div className='CPF'>
+                                  <h3> CPF </h3>
+                                  336.475.018-16
+                                </div>
+                                <hr></hr>
+                                <div className='Email'>
+                                  <h3> Email </h3>
+                                  lucas.testa@iza.com.vc
+                                </div>
+                                <hr></hr>
+                                <div className='Telefone'>
+                                  <h3> Telefone </h3>
+                                  (11)97456-8243
+                                </div>
+                                <hr></hr>
+                                <div className='Data de Nascimento'>
+                                  <h3> Data de Nascimento </h3>
+                                  16/07/1986
+                                </div>
+                                <hr></hr>
+                                <div className='Início da vigencia'>
+                                  <h3> Início da vigencia </h3>
+                                  06/01/2022
+                                </div>
+                                <hr></hr>
+                                <div className='Button'>
+                                  <Button variant="light" style={{ color: "white", background: "#FF5148" }} onClick={newTask}>DESATIVAR SEGURADO</Button>
+                                </div>
+
+                              </ModalCadastro>
+                            </Modal>
+                          </ModalIza></>
                       ))
                     }
                 </tbody>

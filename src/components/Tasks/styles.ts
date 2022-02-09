@@ -20,7 +20,7 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-direction: column;
   font-size: 15px;
-
+  position: relative;
   cursor: pointer;
   transition: all .3s;
 

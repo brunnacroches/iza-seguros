@@ -1,12 +1,12 @@
 import React from "react";
 import Lottie from 'react-lottie';
-import { Container } from "./styles";
+import { ContainerContent } from "./styles";
 
 const ContentLayout: React.FC = ({children}) => {
   return (
-    <Container>
+    <ContainerContent>
       {children}
-    </Container>
+    </ContainerContent>
   );
 };
 

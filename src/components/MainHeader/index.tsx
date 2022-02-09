@@ -7,7 +7,7 @@ import { Outlet } from 'react-router';
 // o userMemo é um hooks decora o valor 
 import emojis from '../../utils/emojis';
 import { 
-  Container, 
+  ContainerMainReader, 
   Profile,  
   UserName,
   UserLogado,
@@ -15,7 +15,8 @@ import {
   EmpresaClient,
   EmailCliente,
   LottiOut,
-  LinkSair
+  LinkSair,
+  CircleUser,
 } from './styles';
 
 const MainHeader: React.FC = () => {
@@ -27,7 +28,7 @@ const MainHeader: React.FC = () => {
     return emojis[indice];
   }, []);
   return (
-    <Container>
+    <ContainerMainReader>
       {/*  PRIMEIRO ELEMENTO  */}
       <Toggle
           // labelLeft="Orange"
@@ -41,6 +42,9 @@ const MainHeader: React.FC = () => {
       </Profile>
       {/*  SEGUNDO ELEMENTO */}
       <UserLogado>
+        <CircleUser>
+          <p>EC</p>
+        </CircleUser>
           <EmpresaClient>Empresa Cliente </EmpresaClient>
           <EmailCliente href="#">email@empresacliente.com.br</EmailCliente>
           <LottiOut href="#">
@@ -54,7 +58,7 @@ const MainHeader: React.FC = () => {
           <LinkSair href="#">Sair</LinkSair>
           <Outlet />
       </UserLogado>
-    </Container>
+    </ContainerMainReader>
   );
 };
 

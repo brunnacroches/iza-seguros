@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerSelect = styled.div`
 
    > select {
      padding: 7px 10px;

@@ -8,8 +8,7 @@ import Layout from "../components/Layout";
 import Login from '../pages/Login';
 // import Layout from "../components/Layout";
 // import Crud from "../pages/Crud";
-import HeaderContent from "../pages/HeaderContent";
-
+import Modal from "../pages/Modal";
 
 
 const AppRoutes: React.FC = () => {
@@ -17,6 +16,7 @@ const AppRoutes: React.FC = () => {
         <Routes>
             <Route path='/' element={<Home /> } />
                 <Route path='/login' element={<Login /> } />
+                <Route path='/modal' element={<Modal /> } />
                 <Route element={<Layout />} >
                     <Route path='/tarefas' element={<Tasks /> } />
                     <Route path='/tarefas_cadastro' element={<TasksForm /> } />
