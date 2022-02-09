@@ -80,7 +80,7 @@ const Segurados: React.FC = () => {
     function editSegurado(id: number) {
       navigate(`/tarefas_cadastro/${id}`)
     }
-    function viewSegurado(id: number) {
+    function viewSegurados(id: number) {
       navigate(`/tarefas/${id}`)
     }
 

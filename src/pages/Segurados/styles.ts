@@ -5,7 +5,7 @@ export const ContainerSegurado = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
-  left: -230px;
+  left: -200px;
   top: -70px;
 
 `;
@@ -18,7 +18,7 @@ h1{
   font-weight: bold;
   font-size: 50px;
   position: relative;
-  left: -200px;
+  left: -150px;
   top: 0px;
 }
 `;

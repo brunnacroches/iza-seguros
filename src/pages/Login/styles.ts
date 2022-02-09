@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import styled from "styled-components";
 
 export const BackgrounPage = styled.div`
@@ -6,6 +7,7 @@ export const BackgrounPage = styled.div`
   background-color: #FF5148;
 
 `;
+
 export const Container = styled.div`
   border-radius: 500px 0px 0px 0px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -126,6 +128,7 @@ export const Content = styled.div`
   }
 
    .form-peice{
+     
       background: #fff;
       min-height: 480px;
       margin-top: 30px;
@@ -155,16 +158,16 @@ export const Content = styled.div`
       transform: translate(-50%, -50%);
 }
 
-      .form-group {
+.form-group {
          margin-bottom: 5px;
          position: relative;
 }
-         &.hasError{
-            input{
-               border-color: #FF5148 !important;
+  &.hasError{
+    input{
+      border-color: #FF5148 !important;
 }
-            label{
-               color: #FF5148 !important;
+    label{
+      color: #FF5148 !important;
 }
 }
 
@@ -245,11 +248,231 @@ export const Content = styled.div`
 
 `;
 
+//______________________________________ FOOTER _____________________________________
+export const FooterLogin = styled.div`
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  background-color: #FF5148;
 
 
+.site-footer
+{
+  border-radius: 200px 200px 0px 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /*/ PARA QUE TODO O CONTEÚDO ANDE PARTINDO DA ESQUERDA */
+  transition: all .3s;
+  background-color:#680265;
+  padding:45px 0 20px;
+  color:#FFFF;
+  
+}
+
+a {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color:#FFFF;
+  /*/ ALTURA ENTRE OS LINKS */
+  margin: -10px 0;
+  /*/ TIRAR O SUBLINHADO */
+  text-decoration:none;
+  /*/ TRANSICAO DA TROCA */
+  transition: opacity .3s;
+  /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+  cursor: pointer;
+  transition: all .3s;
+  position: relative;
+  left: 100px;
+}
+
+  p {
+  font-size: 1px;
+  display: flex;
+  opacity: 0.6;
+  position: relative;
+  font-size:13px;
+  line-height:15px;
+  position: relative;
+  left: 100px;
+  align-items: center;
+  color:#FFFF;
+  /*/ ALTURA ENTRE OS LINKS */
+  margin: -10px 0;
+  /*/ TIRAR O SUBLINHADO */
+  text-decoration:none;
+  /*/ TRANSICAO DA TROCA */
+  transition: opacity .3s;
+  /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+  cursor: pointer;
+  transition: all .3s;
+  }
+h6 {
+  padding-bottom: 8px;
+  font-size: 17px;
+  position: relative;
+  left: 100px;
+}
+
+h5 {
+  position: relative;
+  left: 100px;
+  font-size: 18px;
+}
+
+`;
 
 
+// _______________________STLE OBJETOS FOOTER______________________________________________
 
+// ! LOGO IZA => ponto
+export const LogoIzaIPontoBranco = styled.img`
+  height: 50px;
+  width: 45px;
+  position: relative;
+  /* top: 20px;
+  right: 574px; */
+  cursor: pointer;
+  transition: all .3s;
 
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 
- 
+`;
+// ! LOGO IZA => I PONTO FINAL
+export const LogoIzaPontoFinalBranco = styled.img`
+  height: 50px;
+  width: 50px;
+  position: relative;
+  /* top: 56px;
+  right: 624px; */
+
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+
+`;
+
+// ! LOGO IZA => IZA
+export const LogoIzaBranco = styled.img`
+  height: 60px;
+  width: 130px;
+  position: relative;
+  top: 50px;
+  /* right: 650px;
+  cursor: pointer; */
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
+
+// REDES SOCIAIS 
+export const SvgFacebook = styled.img`
+  height: 60px;
+  width: 130px;
+  position: relative;
+  /* top: 50px;
+  right: 650px; */
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
+export const SvgInstagram = styled.img`
+  height: 60px;
+  width: 130px;
+  position: relative;
+  /* top: 50px;
+  right: 650px; */
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
+export const SvgLinkedin = styled.img`
+  height: 60px;
+  width: 130px;
+  position: relative;
+  /* top: 50px;
+  right: 650px; */
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
+export const ImgGoogle = styled.img`
+  height: 60px;
+  width: 130px;
+  position: relative;
+  /* top: 50px;
+  right: 650px; */
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
+export const ImgApple = styled.img`
+  height: 60px;
+  width: 130px;
+  position: relative;
+  /* top: 50px;
+  right: 650px; */
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
+
+export const SvgWhatsapp = styled.img`
+  height: 30px;
+  width: 50px;
+  position: relative;
+  /* top: 50px;
+  right: 650px; */
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
+
+export const MenuItemLink = styled.a`
+color: ${(props) => props.theme.colors.white};
+font-weight: bold;
+font-size: 17px;
+display: flex;
+align-items: center;
+/*/ ALTURA ENTRE OS LINKS */
+margin: 9px 0;
+/*/ TIRAR O SUBLINHADO */
+text-decoration:none;
+/*/ TRANSICAO DA TROCA */
+transition: opacity .3s;
+/*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
+`;
