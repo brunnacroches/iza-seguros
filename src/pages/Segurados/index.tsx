@@ -6,9 +6,9 @@ import api from "../../services/api";
 import { Modal } from 'react-responsive-modal';
 import moment from 'moment'; 
 import { 
-  ContainerTasks, 
+  ContainerSegurado, 
   ButtonNews,
-  TitleTask,
+  TitleSegurado,
   ModalIza,
   ModalHeader,
   ModalCadastro,
@@ -23,7 +23,7 @@ import { useNavigate,} from 'react-router-dom';
 /*
 & CRIANDO UMA ITERFACE PARA FAZER A TIPAGEM E FALAR QUAIS ATRIBUTOS QUE ELA TEM
 */
-interface ITask {
+interface ISegurados {
   status: boolean;
   title: string;
   cpf: number;
@@ -34,12 +34,12 @@ interface ITask {
   id: number;
 }
 
-const Tasks: React.FC = () => {
+const Segurados: React.FC = () => {
   // ? ⇩⇩⇩ NOTE ⇩⇩⇩
     // ? coloando o dado dentro de uma variável para exibir na tabela ( PASSO 2 )
     // ? criando uma array
-    // ? por ser vetor é passado outra [] < <ITask[]> ([])
-  const [ tasks, setTasks] = useState <ITask[]> ([])
+    // ? por ser vetor é passado outra [] < <ISegurado[]> ([])
+  const [ segurados, setSegurados] = useState <ISegurados[]> ([])
   const navigate = useNavigate();
 
 
@@ -48,39 +48,39 @@ const Tasks: React.FC = () => {
       //^ ⇩ fazendo o consumo da API ⇩
     
     useEffect(() => {
-        loadTasks()
+        loadSegurados()
     }, [])
     //^ ⇧⇧⇧ NOTE ⇧⇧⇧ 
     //^ ⇧  o [] vazio pq eu quero que ele execute assim que a página seja iniciada ⇩
     
     //^ ⇩ funcao assincrona = quando fizer uma requisão e essa requisição pode demorar ou nao ⇩
     //^ ⇩ e essa requisão vai retornar um dado futuro  ⇩
-    async function loadTasks() {
+    async function loadSegurados() {
       
       //^ ⇩ chamando a API ⇩
-      const response = await api.get('/tasks')
+      const response = await api.get('/segurados')
       console.log(response)
       // ? ⇩  pegando os dados da minha resposta( da minha requisição ) ⇩
-      setTasks(response.data)
+      setSegurados(response.data)
     }
-    async function finishedTask(id: number) {
-      await api.patch(`/tasks/${id!}`)
-      loadTasks()
+    async function finishedSegurado(id: number) {
+      await api.patch(`/segurados/${id!}`)
+      loadSegurados()
     }
-    async function deleteTask(id: number) {
-      await api.delete(`/tasks/${id!}`)
-      loadTasks()
+    async function deleteSegurado(id: number) {
+      await api.delete(`/segurados/${id!}`)
+      loadSegurados()
     }
     function formateDate(date: Date) {
       return moment(date).format("DD/MM/YYYY")
     }
-    function newTask () {
+    function newSegurado () {
       navigate('/tarefas_cadastro')
     }
-    function editTask(id: number) {
+    function editSegurado(id: number) {
       navigate(`/tarefas_cadastro/${id}`)
     }
-    function viewTask(id: number) {
+    function viewSegurado(id: number) {
       navigate(`/tarefas/${id}`)
     }
 
@@ -91,14 +91,14 @@ const Tasks: React.FC = () => {
     const onCloseModal = () => setOpen(false);
 
   return (
-    <ContainerTasks>
+    <ContainerSegurado>
         <div className='container'>
           <br />
           <ButtonNews>
-              <TitleTask>
+              <TitleSegurado>
                   <h1>Segurados</h1>
-              </TitleTask>
-              <Button variant="light" style={{ color: "white", background: "#FF5148" }}  onClick={newTask}>Adicionar Novos Segurados</Button>
+              </TitleSegurado>
+              <Button variant="light" style={{ color: "white", background: "#FF5148" }}  onClick={newSegurado}>Adicionar Novos Segurados</Button>
           </ButtonNews>
           <br />
           <Table striped bordered hover className='text-center'>
@@ -119,20 +119,20 @@ const Tasks: React.FC = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {/* //~TASK.MAP (já que ela é uma array) e vou pegar uma "tasks" */}
+                  {/* //~SEGURADO.MAP (já que ela é uma array) e vou pegar um "Segurado" */}
                   {/* //~retornando a seguinte estrutura ... */}
                     {
-                      tasks.map(task => (
-                        <><tr key={task.id}>
+                      segurados.map(segurado => (
+                        <><tr key={segurado.id}>
                           <td>
                             {/* //^na primeira coluna que é o Status  */}
-                            <Badge pill bg={task.finished ? "success" : "danger"}>
-                              {task.finished ? "ATIVO" : "INATIVO"}
+                            <Badge pill bg={segurado.finished ? "success" : "danger"}>
+                              {segurado.finished ? "ATIVO" : "INATIVO"}
                             </Badge>
                           </td>
-                          <td>{task.title}</td>
-                          <td>{task.cpf}</td>
-                          <td>{formateDate(task.updated_at)}</td>
+                          <td>{segurado.title}</td>
+                          <td>{segurado.cpf}</td>
+                          <td>{formateDate(segurado.updated_at)}</td>
                           <td><Button size="sm" variant='Light'
                             style={{
                               color: "white",
@@ -140,16 +140,16 @@ const Tasks: React.FC = () => {
                             }} onClick={onOpenModal}>VER DETALHES </Button> {' '}</td>
 
                           <td>
-                            <Button size="sm" disabled={task.finished} onClick={() => editTask(task.id)}>Editar</Button> {' '}
-                            <Button size="sm" disabled={task.finished} variant='warning' onClick={() => finishedTask(task.id)}>Finalizar</Button> {' '}
-                            <Button size="sm" variant='danger' onClick={() => deleteTask(task.id)}>Remover</Button> {' '}
+                            <Button size="sm" disabled={segurado.finished} onClick={() => editSegurado(segurado.id)}>Editar</Button> {' '}
+                            <Button size="sm" disabled={segurado.finished} variant='warning' onClick={() => finishedSegurado(segurado.id)}>Finalizar</Button> {' '}
+                            <Button size="sm" variant='danger' onClick={() => deleteSegurado(segurado.id)}>Remover</Button> {' '}
                           </td>
                         </tr><ModalIza>
                             <Modal open={open} onClose={onCloseModal} center>
                               <ModalHeader>
                               <BadgePosition>
-                                <Badge pill bg={task.finished ? "success" : "danger"}>
-                                  {task.finished ? "SEGURADO ATIVO" : "SEGURADO INATIVO"}
+                                <Badge pill bg={segurado.finished ? "success" : "danger"}>
+                                  {segurado.finished ? "SEGURADO ATIVO" : "SEGURADO INATIVO"}
                                 </Badge>
                               </BadgePosition>
                                 <h2>Lucas das Chagas Testa Nome Nome</h2>
@@ -181,7 +181,7 @@ const Tasks: React.FC = () => {
                                 </div>
                                 <hr></hr>
                                 <div className='Button'>
-                                  <Button variant="light" style={{ color: "white", background: "#FF5148" }} onClick={newTask}>DESATIVAR SEGURADO</Button>
+                                  <Button variant="light" style={{ color: "white", background: "#FF5148" }} onClick={newSegurado}>DESATIVAR SEGURADO</Button>
                                 </div>
 
                               </ModalCadastro>
@@ -192,10 +192,10 @@ const Tasks: React.FC = () => {
                 </tbody>
           </Table>
         </div>
-    </ContainerTasks>
+    </ContainerSegurado>
   );
 };
-export default Tasks;
+export default Segurados;
 
 
   // ? ⇩⇩⇩ NOTE ⇩⇩⇩

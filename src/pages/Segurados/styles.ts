@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const ContainerTasks = styled.div`
+export const ContainerSegurado = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -11,7 +11,7 @@ export const ContainerTasks = styled.div`
 `;
 
 
-export const TitleTask = styled.h1`
+export const TitleSegurado = styled.h1`
 
 h1{
   color: #FF5148;
@@ -32,7 +32,7 @@ justify-content: space-between;
 
 
 
->.task-header {
+>.segurado-header {
       width: 100%;
       display: flex;
       flex-direction: row;

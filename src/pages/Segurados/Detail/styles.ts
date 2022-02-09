@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 
-export const ContainerTasks = styled.div`
+export const ContainerSegurados = styled.div`
   display: flex;
   justify-content: space-between;
 
 `;
 
-export const ButtonNew = styled.div`
+export const ButtonBack = styled.div`
 display: flex;
 justify-content: space-between;
 

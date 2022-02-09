@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 
-export const ContainerTasks = styled.div`
+export const ContainerSegurados = styled.div`
   display: flex;
   justify-content: space-between;
 
 `;
 
-export const ButtonBack = styled.div`
+export const ButtonNew = styled.div`
 display: flex;
 justify-content: space-between;
 
->.task-header {
+>.segurado-header {
       width: 100%;
       display: flex;
       flex-direction: row;

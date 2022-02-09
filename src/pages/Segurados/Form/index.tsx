@@ -3,7 +3,7 @@
 import React, {useState, useEffect, ChangeEvent} from 'react';
 import { Button, Form  } from 'react-bootstrap';
 import api from "../../../services/api";
-import { ContainerTasks, ButtonNew  } from "./styles";
+import { ContainerSegurados, ButtonNew  } from "./styles";
 import { useNavigate, useParams} from 'react-router-dom';
 
 // import  "./styles.ts";
@@ -11,7 +11,7 @@ import { useNavigate, useParams} from 'react-router-dom';
 
 & CRIANDO UMA ITERFACE PARA FAZER A TIPAGEM E FALAR QUAIS ATRIBUTOS QUE ELA TEM
 */
-interface ITask {
+interface ISegurado {
   // status: boolean;
   // cpf: number;
   // created_at: Date;
@@ -22,23 +22,23 @@ interface ITask {
   description:string;
 }
 
-const Tasks: React.FC = () => {
+const Segurados: React.FC = () => {
 
   const navigate = useNavigate();
   // PEGANDO TODOS OS PARAMETROS QUE TEM NA URL
   const { id } = useParams()
   // PARA SALVAR OS DADOS NO BANCO DE DADOS
-  const [model, setModel] = useState<ITask>({
+  const [model, setModel] = useState<ISegurado>({
     title: '',
     description: '',
   })
 
   // diga ao compilador que você tem certeza de que o nome não é nulo usando! (!)
-  // findTask(id!)
+  // findSegurado(id!)
   // ! O mesmo vale para o operador de desigualdade estrita (!==).
   useEffect(() => {
     if (id !== undefined) {
-      findTask(id!)
+      findSegurados(id!)
     }
   }, [id])
 
@@ -58,18 +58,18 @@ const Tasks: React.FC = () => {
 
     if (id !== undefined) {
 
-      const response = await api.put(`/tasks/${id}`, model)
+      const response = await api.put(`/segurados/${id}`, model)
     } else {
 
-      const response = await api.post('/tasks', model)
+      const response = await api.post('/segurados', model)
     }
     // SALVAR E VOLTAR PARA A PÁGINA
     back()
   }
 
   // FUNÇÃO ASSÍNCRONA = PEGAR O "ID" E CARREGAR A TESTK CUJO A ID É IGUAL A QUE ESTAMOS RECEBENDO
-  async function findTask(id: string){
-    const response = await api.get(`tasks/${id}`)
+  async function findSegurados(id: string){
+    const response = await api.get(`segurados/${id}`)
     setModel({
       title: response.data.title,
       description: response.data.description
@@ -81,12 +81,12 @@ const Tasks: React.FC = () => {
   }
   
   return (
-    <ContainerTasks>
+    <ContainerSegurados>
         <div className='container'>
           <br />
           <ButtonNew>
-            <div className='task-header'>
-              <h1>New Tasks</h1>
+            <div className='segurado-header'>
+              <h1>New Segurados</h1>
               <Button variant="dark" size="sm" onClick={() => navigate(-1)}>Voltar</Button>
             </div>
           </ButtonNew>
@@ -119,10 +119,10 @@ const Tasks: React.FC = () => {
             </Form>
           </div>
         </div>
-    </ContainerTasks>
+    </ContainerSegurados>
   );
 };
-export default Tasks;
+export default Segurados;
 
 
 

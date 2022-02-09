@@ -5,12 +5,12 @@ import { Badge, Button, Card } from 'react-bootstrap';
 import api from "../../../services/api";
 import { useNavigate, useParams} from 'react-router-dom';
 import { 
-  ContainerTasks, 
+  ContainerSegurados, 
   ButtonBack  
 } from "./styles";
 import moment from 'moment';
 
-interface ITask {
+interface ISegurado {
   id: number;
   description: string;
   title: string;
@@ -23,10 +23,10 @@ const Detail: React.FC = () => {
 
   const navigate = useNavigate();
    const { id } = useParams()
-  const [task, setTask] = useState<ITask>()
+  const [segurado, setSegurado] = useState<ISegurado>()
 
   useEffect(() => {
-    findTask()
+    findSegurado()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
@@ -34,10 +34,10 @@ const Detail: React.FC = () => {
     navigate(-1)
   }
 
-   async function findTask() {
-    const response = await api.get<ITask>(`/tasks/${id}`)
+   async function findSegurado() {
+    const response = await api.get<ISegurado>(`/segurados/${id}`)
     console.log(response)
-    setTask(response.data)
+    setSegurado(response.data)
     // SALVAR E VOLTAR PARA A PÁGINA
     // back()
   }
@@ -47,41 +47,41 @@ const Detail: React.FC = () => {
   }
   
   return (
-    <ContainerTasks>
+    <ContainerSegurados>
         <div className='container'>
           <br />
           <ButtonBack>
-            <div className='task-header'>
-              <h1>Tasks Detail</h1>
+            <div className='segurados-header'>
+              <h1>Segurados Detail</h1>
               <Button variant="dark" size="sm" onClick={back}>Voltar</Button>
             </div>
           </ButtonBack>
           <br />
           <Card style={{ width: '18rem' }}>
             <Card.Body>
-              <Card.Title>{ task?.title }</Card.Title>
+              <Card.Title>{ segurado?.title }</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
               <Card.Text>
-              {task?.description}
+              {segurado?.description}
               <br />
-              <Badge pill bg={task?.finished ? "sucess" : "warning"}>
-                             {task?.finished ? "FINALIZADO" : "PENDENTE"}
+              <Badge pill bg={segurado?.finished ? "sucess" : "warning"}>
+                             {segurado?.finished ? "FINALIZADO" : "PENDENTE"}
               </Badge>
               <br />
               <strong>Data de Cadastro:</strong>
               <Badge pill bg="info">
-                  { formateDate(task?.updated_at) }
+                  { formateDate(segurado?.updated_at) }
               </Badge>
               <br />
               <strong>Atualização:</strong>
               <Badge pill bg="info">
-                  { formateDate(task?.updated_at) }
+                  { formateDate(segurado?.updated_at) }
               </Badge>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
-    </ContainerTasks>
+    </ContainerSegurados>
   );
 };
 export default Detail;
