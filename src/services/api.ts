@@ -6,7 +6,7 @@ import axios from 'axios'
 // vai ser passado a configuração chamada baseURL, que será a rota padrão 
 // para as nossas requisões (HTTP ... )
 const api = axios.create ({
-  baseURL: "http://localhost:3333"
+  baseURL: "http://localhost:3535"
 })
 
 export default api 

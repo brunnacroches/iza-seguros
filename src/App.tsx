@@ -6,9 +6,6 @@ import Header from './components/Header';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 // import { Routes, Route } from "react-router-dom";
-import Layout from './components/Layout';
-import HeaderContent from './pages/HeaderContent';
-import Crud from './pages/Crud';
 
 // TEMA
 import orange from './styles/themes/orange';
