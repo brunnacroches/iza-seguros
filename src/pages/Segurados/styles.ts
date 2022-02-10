@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const ContainerSegurado = styled.div`
   display: flex;
   justify-content: space-between;
-  position: relative;
-  left: -200px;
-  top: -70px;
+  position: fixed;
+  left: 300px;
+  top: 230px;
 
 `;
 

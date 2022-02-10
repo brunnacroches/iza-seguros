@@ -1,10 +1,14 @@
 // aqui vai ser usado o atalho chamado "rfc" (react functional component) que já cria a estrutura
 
 import React, {useState, useEffect, ChangeEvent} from 'react';
-import { Button, Form  } from 'react-bootstrap';
+import { Button, Col, Form, Row  } from 'react-bootstrap';
 import api from "../../../services/api";
-import { ContainerSegurados, ButtonNew  } from "./styles";
 import { useNavigate, useParams} from 'react-router-dom';
+import { 
+  ContainerSegurados, 
+  ButtonSave,
+  LinkBack
+} from "./styles";
 
 // import  "./styles.ts";
 /*
@@ -81,45 +85,64 @@ const Segurados: React.FC = () => {
   }
   
   return (
-    <ContainerSegurados>
-        <div className='container'>
-          <br />
-          <ButtonNew>
-            <div className='segurado-header'>
-              <h1>New Segurados</h1>
-              <Button variant="dark" size="sm" onClick={() => navigate(-1)}>Voltar</Button>
-            </div>
-          </ButtonNew>
-          <br />
-          <div className='containerForm'>
-            <Form onSubmit={onSubmit}>
-              <Form.Group>
-                <Form.Label>Title</Form.Label>
-                <Form.Control 
-                    type="text" 
-                    name="title" 
-                    value={model.title}
-                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
-                    />
-              </Form.Group>
+      <ContainerSegurados>
+          <div className='container'>
+            <br />
+              <div className='segurado-header'>
+                <h1>Novos Segurados</h1>
+              </div>
+            <br />
+            <div className='containerForm'>
+            <Form>
+              <Form.Group className="mb-3" controlId="nomeCompleto">
+                  <Form.Label>Nome Completo</Form.Label>
+                  <Form.Control placeholder="Nome Nome Sobrenome Sobrenome" />
+                </Form.Group>
+                <Row className="mb-3">
+                  <Form.Group as={Col} controlId="CPFSegurados">
+                    <Form.Label>CPF</Form.Label>
+                    <Form.Control type="cpf" placeholder="336.475.018-16" />
+                  </Form.Group>
+                  
+                  <Form.Group as={Col} controlId="NascimentoData">
+                    <Form.Label>Data de nascimento</Form.Label>
+                    <Form.Control type="data__nascimento" placeholder="16/07/1986" />
+                  </Form.Group>
+                </Row>
 
-              <Form.Group>
-                <Form.Label>Descrição</Form.Label>
-                <Form.Control 
-                  as="textarea" 
-                  rows={3}
-                  name="description"
-                  value={model.description}
-                  onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
-                  />
-              </Form.Group>
-              <Button variant="dark" type="submit">
-                Salvar
-              </Button>
-            </Form>
+                <Row className="mb-3">
+                <Form.Group as={Col} controlId="EmailSegurado">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email__segurado" placeholder="emailsegurado@algumaempresa.com.br" />
+                  </Form.Group>
+
+                  <Form.Group as={Col} controlId="TelefoneSegurados">
+                    <Form.Label>Telefone</Form.Label>
+                    <Form.Control type="telefone__Segurado" placeholder="(11) 97456-8243" />
+                  </Form.Group>
+                </Row>
+
+                <Form.Group className="mb-3" id="formGridCheckbox">
+                  <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+                <LinkBack href="#" onClick={() => navigate(-1)}>
+                Retornar Segurados
+                </LinkBack>
+              </Form>
+            </div>
+            <ButtonSave>
+                <Button variant="light" style=
+                    {{ 
+                      color: "white", 
+                      background: "#FF5148" 
+                      }} onClick={() => navigate(-1)}>
+                        Salvar Segurados
+                </Button>
+            </ButtonSave>
           </div>
-        </div>
-    </ContainerSegurados>
+          <hr>
+          </hr>
+      </ContainerSegurados>  
   );
 };
 export default Segurados;

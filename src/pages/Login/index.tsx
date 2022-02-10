@@ -101,13 +101,13 @@ const Login: React.FC = () => {
                 <div className='Imagens__Contato'>
                 </div>
               <div className="col-xs-6 col-md-3">
-                <h5>Fale com Iza</h5>
                 <div className='logo__Iza__Footer'>
                     <LogoIzaIPontoBranco src={LogoIzaPontoBranco} alt=""/>
                     <LogoIzaPontoFinalBranco src={LogoIzaIBranco} alt="" />
                     <LogoIzaBranco src={LogoIzaZaBranco} alt="" />
                 </div>
                 <div className='Imagens__Contato'>
+                <h4>Siga a gente</h4>
                     <ImgGoogle src ={google} alt="" />
                     <ImgApple src ={apple} alt="" />
                     <SvgFacebook src ={facebook} alt="" />
@@ -161,9 +161,10 @@ const Login: React.FC = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-sm-6 col-xs-12">
-                <p className="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-            <a href="#">Scanfcode</a>.
-                </p>
+                <h3> IZA Seguros S.A CNPJ 40.004.544/0001-46 Constituída no âmbito do ambiente
+                regulatório experimental("Sandox") da SUSEP sob o Processo SUSEP nº 154.618857/2020-48 Autorizada a operar nos termos
+                da Portaria SUSEP nº 7.764 de 04/03/2021
+                </h3>
               </div>
 
               <div className="col-md-4 col-sm-6 col-xs-12">

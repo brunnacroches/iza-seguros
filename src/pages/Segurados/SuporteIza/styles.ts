@@ -1,16 +1,13 @@
-import React  from 'react';
-import ReactFrom from 'react-dom'
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 
 export const ContainerSegurados = styled.div`
   display: flex;
   justify-content: space-between;
   position: fixed;
-  left: 100px;
-  top: 100px;
-  width: auto;
+  left: 350px;
+  top: 160px;
+  width: 900px;
   height: auto;
 
 h1 {
@@ -26,13 +23,6 @@ export const ContainerContent = styled.div`
   top: 150px
 
 `;
-export const TitleLabel = styled.p`
-  position: fixed;
-  left: 720px;
-  top: 220px
-
-`;
-
 
 export const LinkBack = styled.a`
 font-size: 22px;
@@ -57,8 +47,8 @@ cursor: pointer;
 export const ButtonSave = styled.div`
 display: flex;
 position: fixed;
-left: 720px;
-top: 580px;
+left: 820px;
+top: 620px;
 height: auto;
 cursor: pointer;
   transition: all .3s;
@@ -82,13 +72,6 @@ height: auto;
   color: #FF5148;
 
 }
-`;
-
-export const Label = styled.div`
-display: flex;
-position: fixed;
-left: 720px;
-top: 260px;
-height: auto;
 
 `;
+

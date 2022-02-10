@@ -108,6 +108,7 @@ cursor: pointer;
   &:hover {
     opacity: 0.7;
     transform: translateX(10px);
+    color: white;
   }
 `;
 export const LottiePeople = styled.a`
@@ -197,7 +198,7 @@ export const MenuSuporte = styled.a`
   display: flex;
   align-items: center;
   position: relative;
-  top: 170px;
+  top: 155px;
   left:-70px;
   color: ${(props) => props.theme.colors.white};
   /*/ DEIXA UM DO LADO DO OUTRO */
@@ -219,6 +220,7 @@ export const MenuSuporte = styled.a`
   &:hover {
     opacity: 0.7;
     transform: translateX(10px);
+    color: white;
   }
 `;
 

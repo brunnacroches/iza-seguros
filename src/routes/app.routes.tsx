@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from '../pages/Home';
 import Segurados from '../pages/Segurados';
-import TasksForm from '../pages/Segurados/Form';
+import NovosSegurados from '../pages/Segurados/NovosSegurados';
 import TasksDetail from '../pages/Segurados/Detail';
 import Layout from "../components/Layout";
 import Login from '../pages/Login';
@@ -19,8 +19,8 @@ const AppRoutes: React.FC = () => {
                 <Route path='/modal' element={<Modal /> } />
                 <Route element={<Layout />} >
                     <Route path='/tarefas' element={<Segurados /> } />
-                    <Route path='/tarefas_cadastro' element={<TasksForm /> } />
-                    <Route path='/tarefas_cadastro/:id' element={<TasksForm /> } />
+                    <Route path='/tarefas_cadastro' element={<NovosSegurados /> } />
+                    <Route path='/tarefas_cadastro/:id' element={<NovosSegurados /> } />
                     <Route path='/tarefas/:id' element={<TasksDetail /> } />
                 </Route>
         </Routes>

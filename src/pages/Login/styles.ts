@@ -57,11 +57,11 @@ export const HeaderIza = styled.div`
 `;
 // ! LOGO IZA => I PONTO
 export const LogoIzaPonto = styled.img`
-  height: 50px;
-  width: 15px;
+  height: auto;
+  width: 18px;
   position: relative;
-  left: 95px;
-  top: -30px;
+  left: -128px;
+  top: -50px;
 
   cursor: pointer;
   transition: all .3s;
@@ -72,13 +72,13 @@ export const LogoIzaPonto = styled.img`
   }
 
 `;
-// ! LOGO IZA => IZA
+// ! LOGO IZA => I
 export const LogoIzaIP = styled.img`
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 21Px;
   position: relative;
-  top: 10px;
-  left: 58px;
+  top: 5px;
+  left: -147px;;
   cursor: pointer;
   transition: all .3s;
 
@@ -91,11 +91,11 @@ export const LogoIzaIP = styled.img`
 
 // ! LOGO IZA => IZA
 export const LogoIza = styled.img`
-  height: 60px;
-  width: 130px;
+  height: auto;
+  width: 180px;
   position: relative;
-  top: -50px;
-  left: 120px;
+  top: -80px;
+  left: -100px;
   cursor: pointer;
   transition: all .3s;
   &:hover {
@@ -105,12 +105,12 @@ export const LogoIza = styled.img`
 `;
 
 export const TextLogin = styled.h3`
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     position: relative;
-    top:-30px;
+    top:-20px;
     opacity: 0.7;
-    left: 100px;
+    left: 35px;
 `;
 
 
@@ -278,11 +278,15 @@ a {
   margin: -10px 0;
   /*/ TIRAR O SUBLINHADO */
   text-decoration:none;
-  /*/ TRANSICAO DA TROCA */
-  transition: opacity .3s;
-  /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
-  cursor: pointer;
+ /*/ TRANSICAO DA TROCA */
+transition: opacity .3s;
+/*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+cursor: pointer;
   transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
   position: relative;
   left: 100px;
 }
@@ -300,27 +304,80 @@ a {
   color:#FFFF;
   /*/ ALTURA ENTRE OS LINKS */
   margin: -10px 0;
-  /*/ TIRAR O SUBLINHADO */
-  text-decoration:none;
   /*/ TRANSICAO DA TROCA */
   transition: opacity .3s;
   /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
   cursor: pointer;
   transition: all .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
   }
-h6 {
-  padding-bottom: 8px;
-  font-size: 17px;
-  position: relative;
-  left: 100px;
+    cursor: pointer;
+    transition: all .3s;
+    }
+    h6 {
+    padding-bottom: 8px;
+    font-size: 17px;
+    position: relative;
+    left: 100px;
+    /*/ TRANSICAO DA TROCA */
+    transition: opacity .3s;
+    /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 }
 
 h5 {
-  position: relative;
-  left: 100px;
-  font-size: 18px;
+    position: relative;
+    left: 100px;
+    font-size: 18px;
+    /*/ TRANSICAO DA TROCA */
+    transition: opacity .3s;
+    /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+    opacity: 0.7;
+    transform: translateX(10px);
+  }
 }
 
+h4 {
+      position: relative;
+      left: 107px;
+      font-size: 18px;
+      top: 70px;
+      /*/ TRANSICAO DA TROCA */
+      transition: opacity .3s;
+      /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+      cursor: pointer;
+      transition: all .3s;
+      &:hover {
+      opacity: 0.7;
+      transform: translateX(10px);
+  }
+    }
+h3 {
+      font-size: 10px;
+      opacity: 0.6;
+      text-align: center;
+      position: relative;
+      left: 250px;
+      /*/ TRANSICAO DA TROCA */
+      transition: opacity .3s;
+      /*/ QUANDO PASSAR O MOUSE ELA VAI MUDAR DE COR */
+      cursor: pointer;
+      transition: all .3s;
+      &:hover {
+      opacity: 0.7;
+      transform: translateX(10px);
+  }
+    }
 `;
 
 
@@ -328,11 +385,11 @@ h5 {
 
 // ! LOGO IZA => ponto
 export const LogoIzaIPontoBranco = styled.img`
-  height: 50px;
-  width: 45px;
+  height: auto;
+  width: 23px;
+  left: 105px;
+  top: -73px;
   position: relative;
-  /* top: 20px;
-  right: 574px; */
   cursor: pointer;
   transition: all .3s;
 
@@ -341,14 +398,16 @@ export const LogoIzaIPontoBranco = styled.img`
     transform: translateX(10px);
   }
 
+
+
 `;
 // ! LOGO IZA => I PONTO FINAL
 export const LogoIzaPontoFinalBranco = styled.img`
-  height: 50px;
-  width: 50px;
+  height:auto;
+  width: 23px;
+  left: 82px;
   position: relative;
-  /* top: 56px;
-  right: 624px; */
+  top: -10px;
 
   cursor: pointer;
   transition: all .3s;
@@ -362,10 +421,11 @@ export const LogoIzaPontoFinalBranco = styled.img`
 
 // ! LOGO IZA => IZA
 export const LogoIzaBranco = styled.img`
-  height: 60px;
-  width: 130px;
+  height:auto;
+  width: 200px;
+  left: 90px;
+  top: -10px;
   position: relative;
-  top: 50px;
   /* right: 650px;
   cursor: pointer; */
   transition: all .3s;
@@ -377,11 +437,11 @@ export const LogoIzaBranco = styled.img`
 
 // REDES SOCIAIS 
 export const SvgFacebook = styled.img`
-  height: 60px;
-  width: 130px;
+  height: auto;
+  width: 30px;
   position: relative;
-  /* top: 50px;
-  right: 650px; */
+  top: 70px;
+  right: 85px;
   cursor: pointer;
   transition: all .3s;
   &:hover {
@@ -390,11 +450,11 @@ export const SvgFacebook = styled.img`
   }
 `;
 export const SvgInstagram = styled.img`
-  height: 60px;
-  width: 130px;
+  height: auto;
+  width: 30px;
   position: relative;
-  /* top: 50px;
-  right: 650px; */
+  top: 70px;
+  right: 80px;
   cursor: pointer;
   transition: all .3s;
   &:hover {
@@ -403,11 +463,11 @@ export const SvgInstagram = styled.img`
   }
 `;
 export const SvgLinkedin = styled.img`
-  height: 60px;
-  width: 130px;
+  height: auto;
+  width: 30px;
   position: relative;
-  /* top: 50px;
-  right: 650px; */
+  top: 70px;
+  right: 75px;
   cursor: pointer;
   transition: all .3s;
   &:hover {
@@ -416,11 +476,11 @@ export const SvgLinkedin = styled.img`
   }
 `;
 export const ImgGoogle = styled.img`
-  height: 60px;
-  width: 130px;
+  height: auto;
+  width: 100px;
   position: relative;
-  /* top: 50px;
-  right: 650px; */
+  top: -25px;
+  right: -105px; 
   cursor: pointer;
   transition: all .3s;
   &:hover {
@@ -429,25 +489,28 @@ export const ImgGoogle = styled.img`
   }
 `;
 export const ImgApple = styled.img`
-  height: 60px;
-  width: 130px;
+  height: auto;
+  width: 90px;
   position: relative;
-  /* top: 50px;
-  right: 650px; */
+  right: -110px; 
+  top: -25px;
   cursor: pointer;
   transition: all .3s;
   &:hover {
     opacity: 0.7;
     transform: translateX(10px);
+  
   }
 `;
+
+
 
 export const SvgWhatsapp = styled.img`
   height: 30px;
   width: 50px;
   position: relative;
-  /* top: 50px;
-  right: 650px; */
+  top: 10px;
+  right: -260px;
   cursor: pointer;
   transition: all .3s;
   &:hover {
