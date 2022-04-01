@@ -1,5 +1,5 @@
 
-/\*\*
+# Getting Started with components
 
 - - START YARN : yarn start
 - - YARN STYLE COMPONENTS : yarn add styled-components
@@ -58,7 +58,7 @@ https://styled-system.com/getting-started/
 
 ---
 
-### CRIANDO AS PASTAS
+### CRIANDO AS PASTAS -ESTRUTURA DE ORGANIZAÇÃO 
 
 -PUBLIC
 -index.html
@@ -111,7 +111,7 @@ requisão para o Back End
 
 =============================>>> <<<=================================
 
-### Explicando o CÓDIGO ==> COMPONENTES <==
+### Explicando o CÓDIGO ==> COMPONENTES <== COMENTÁRIOS NO CÓDIGO
 
 aqui basicamente:
 
