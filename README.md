@@ -1,24 +1,3 @@
-COMENTAR COLORIDO NO CODIGO
-
-- - IMPORTANTE
-- ! ATENÇÃO!
-- ? DUVIDA
-- TODO MAIUSCULO
-- @param
-- @param myParam The parameter of this method
-- \*/
-
-COMENTAR FUNCAO !
-
-/\*\*
-
-- - IMPORTANTE
-- ! ATENÇÃO!
-- ? DUVIDA
-- TODO MAIUSCULO
-- @param
-- @param myParam The parameter of this method
-- \*/
 
 /\*\*
 
